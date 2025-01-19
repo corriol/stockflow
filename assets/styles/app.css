@@ -1,3 +1,29 @@
-body {
-    background-color: skyblue;
+:root{
+    --blauFosc: #222831;
+    --blauClar: #30475E;
+    --taronja: #FF7000;
+    --gris: #ECECEC;
+    --title: #FF7F50;
+    --badge: #DC3545;
+    --logout: #A52A2A;
+}
+
+.bg-light-blue{
+    background-color: var(--blauClar);
+}
+
+.bg-dark-blue{
+    background-color: var(--blauFosc);
+}
+
+.bg-orange{
+    background-color: var(--taronja);
+}
+
+.border-orange{
+    border: 1px solid var(--taronja)
+}
+
+.border-light-blue{
+    border: 2px solid var(--blauClar);
 }
