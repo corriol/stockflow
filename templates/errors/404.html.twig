@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - StockFlow</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        :root {
+            --blauFosc: #222831;
+            --blauClar: #30475E;
+            --taronja: #FF7000;
+            --gris: #ECECEC;
+        }
+
+        * {
+            font-family: "Noto Serif", serif;
+            font-size: 1.1rem;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--gris);
+            color: var(--blauClar);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .error-container {
+            background-color: var(--blauFosc);
+            color: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .error-container h1 {
+            font-size: 6rem;
+            color: var(--taronja);
+        }
+
+        .error-container p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .error-container a {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background-color: var(--taronja);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .error-container a:hover {
+            background-color: var(--blauClar);
+        }
+
+        .error-container img {
+            width: 200px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <img src="Recursos/logo_header.png" alt="StockFlow Logo">
+        <h1>404</h1>
+        <p>¡Ups! La página que buscas no se encuentra disponible.</p>
+        <p>Es posible que haya sido movida o que nunca haya existido.</p>
+        <a href="index.html">Volver al inicio</a>
+    </div>
+</body>
+
+</html>
