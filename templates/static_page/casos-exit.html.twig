@@ -1,7 +1,246 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Stockflow{% endblock %}
+{% block title %}Casos de Exito{% endblock %}
 
 {% block main %}
-<h1>Descàrrega de producte i compra</h1>
+
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div>
+        <div>
+          <a href="../index.html"><img src="../../assets/imatges/base/logo_header.png" alt="" class="img-fluid"></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div>
+          <div>
+            <ul>
+              <li class="dropdown">
+                PRODUCTO <span>^</span>
+                <ul class="dropdown-menu" style="display: none;">
+                  <a href="./descarrega.html.twig"><li>DESCARGA DE PRODUCTO</li></a>
+                  <a href="./plans-preus.html.twig"><li>PLANES Y PRECIOS</li></a>
+                </ul>
+              </li>
+              <a href="../casos-exit.html.twig"><li>CASOS DE ÉXITO</li></a>
+              <a href="./resenyes.html.twig"><li>RESEÑAS</li></a>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <a href="./qui-som.html.twig"><li>QUIÉNES SOMOS</li></a>
+              <a href="../blog/blog.html"><li>BLOG</li></a>
+              <a href="./contacte.html.twig"><li>CONTACTO</li></a>
+            </ul>
+            <div>
+              <a href="./descripcio-producte.html.twig"><button>DEMO</button></a>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1>Casos de Éxito</h1>
+              <p>
+                StockFlow se enorgullece de colaborar con empresas líderes
+                como Microsoft, Apple, Ubisoft y Amazon. Descubre cómo
+                nuestras soluciones a medida han contribuido al éxito de sus
+                negocios y cómo hemos construido relaciones sólidas y
+                duraderas.
+              </p>
+            </div>
+            <div>
+              <a href="./contacte.html.twig"><button>Cuéntanos tu experiencia</button></a>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="../../assets/imatges/imatgescasos/01-caso-exito.png" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <img src="../../assets/imatges/imatgescasos/01-amazon.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <h1>Amazon</h1>
+              <p>
+                Al optimizar la gestión de sus devoluciones, Amazon pudo
+                mejorar la experiencia del cliente y reducir los costos
+                asociados a este proceso.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1>Apple</h1>
+              <p>
+                Gracias a nuestra solución de transporte prioritario, Apple
+                garantizó la entrega a tiempo de sus nuevos productos en
+                todo el mundo, superando las expectativas de los
+                consumidores.
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <img src="../../assets/imatges/imatgescasos/02-apple.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <img src="../../assets/imatges/imatgescasos/03-microsoft.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <h1>Microsoft</h1>
+              <p>
+                Al implementar nuestro sistema de gestión de inventario,
+                Microsoft pudo reducir sus tiempos de respuesta a los
+                clientes en un 20%, optimizando sus operaciones en la región
+                de EMEA.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1>Ubisoft</h1>
+              <p>
+                Con nuestra plataforma de seguimiento en tiempo real,
+                Ubisoft logró una mayor visibilidad de sus envíos,
+                reduciendo significativamente las pérdidas y mejorando la
+                satisfacción de sus clientes.
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <img src="../../assets/imatges/imatgescasos/04-ubisoft.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</main>
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div>
+          <div>
+            <img src="../../assets/imatges/base/logo_footer.png" alt="" class="img-fluid">
+          </div>
+          <div>
+            <p>
+              <a href="https://www.google.es/maps/place/Carrer+Duanes,+17,+03780+Pego,+Alacant">
+                <i class="fa-solid fa-location-dot"></i></a>
+              C/Duanes, 17 - Pego 
+            </p>
+            <p>
+              <a href="./contacte.html.twig"><i class="fa-solid fa-phone"></i></a>
+              +34 966 409 960 
+            </p>
+            <p>
+              <a href="./contacte.html.twig">
+                <i class="fa-solid fa-envelope"></i></a>
+              03007613@edu.gva.es
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div>
+          <p>Legal</p>
+          <div>
+            <p><a href="../faqs/faqs.html">FAQs</a></p>
+            <p><a href="../avisoLegal/avisoLegal.html">Aviso legal</a></p>
+            <p>
+              <a href="../politicaCookies/politicaCookies.html">Política de cookies</a>
+            </p>
+            <p>
+              <a href="../politicaPrivacidad/politicaPrivacidad.html">Política de privacidad</a>
+            </p>
+          </div>
+          <div>
+            <a href="https://x.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div>
+          <p>NEWSLETTERS</p>
+          <div>
+            <div>
+              <p>* Nombre</p>
+              <input type="text" placeholder="Indica tu nombre">
+            </div>
+            <div>
+              <p>* Email</p>
+              <input type="text" placeholder="Indica tu email">
+            </div>
+          </div>
+          <div>
+            <input type="checkbox">
+            <label>Acepto
+              <span>
+                <a href="../terminos_condiciones/terminos_condiciones.html">términos</a></span>
+              y
+              <span><a href="../terminos_condiciones/terminos_condiciones.html">condiciones</a></span></label>
+          </div>
+          <div>
+            <button>Suscríbete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6"></div>
+    <div class="col-6">
+      <div>
+        <p>
+          © Copyrigth 2024. Todos los derechos reservados
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}
