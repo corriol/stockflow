@@ -3,5 +3,162 @@
 {% block title %}Stockflow{% endblock %}
 
 {% block main %}
-<h1>Descàrrega de producte i compra</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-366D0XWC0C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-366D0XWC0C');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../img/favicon_4.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Quiénes somos</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <a href="../index.html"><img src="../img/logo_header.png" alt="Logo"></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PRODUCTO</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../descarrega/descarrega.html">DESCARGA DE PRODUCTO</a></li>
+                                    <li><a class="dropdown-item" href="../preu_plans/preu_plans.html">PLANES Y PRECIOS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../casosExito/casosExito.html">CASOS DE ÉXITO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../resenas/resenas.html">RESEÑAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../qui_som/qui_som.html">QUIÉNES SOMOS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../blog/blog.html">BLOG</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../contactar/contactar.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a href="../descripcioProducte/descripcioproducte.html" class="btn btn-primary">DEMO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="text-center mb-4">
+            <h1>ASÍ ES STOCKFLOW</h1>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <img src="./imgQuiSom/fotoQuiSom.avif" alt="Quiénes somos" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <p>En StockFlow, transformamos la gestión de almacenes en una experiencia simple y eficiente. Combinamos
+                    herramientas avanzadas con una interfaz intuitiva para optimizar tus operaciones, facilitar decisiones
+                    inteligentes y potenciar tu negocio. Somos expertos en tecnología y logística, comprometidos en
+                    ofrecerte soluciones confiables y poderosas. Únete a la comunidad que lidera el cambio hacia la
+                    excelencia logística. StockFlow, tu aliado estratégico en la gestión de almacenes.</p>
+            </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <h1>NUESTROS PRINCIPIOS</h1>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <p>Nuestros principios se basan en la confianza, la innovación y la excelencia. Creemos en ofrecer soluciones
+                    prácticas y efectivas que se adapten a las necesidades reales de cada cliente. Valoramos la transparencia
+                    en nuestras acciones, el compromiso con la mejora continua y el impacto positivo en los negocios que confían
+                    en nosotros. En StockFlow trabajamos cada día para ser más que una herramienta, buscamos ser un socio
+                    estratégico en tu camino hacia el éxito.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-3">
+                <img src="./imgQuiSom/2.icona-objectius.png" alt="Cumplir objetivos" class="img-fluid mb-3">
+                <h3>Cumplir objetivos</h3>
+                <p>Optimizamos tus operaciones para hacer tu gestión más eficiente.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./imgQuiSom/1.icona-equip.png" alt="Trabajo en equipo" class="img-fluid mb-3">
+                <h3>Compañerismo</h3>
+                <p>Estamos comprometidos en brindarte el respaldo de un equipo que entiende tus necesidades.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./imgQuiSom/3.icona-seguridad.png" alt="Seguridad" class="img-fluid mb-3">
+                <h3>Seguridad</h3>
+                <p>Garantizamos la protección de tus datos con tecnologías de vanguardia.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./imgQuiSom/4.icona-participa.png" alt="Participación en proyectos" class="img-fluid mb-3">
+                <h3>Participación en proyectos</h3>
+                <p>Buscamos oportunidades para colaborar en proyectos innovadores.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <img src="../img/logo_footer.png" alt="Logo" class="img-fluid mb-3">
+                        <p><a href="https://www.google.es/maps/place/Carrer+Duanes,17">C/Duanes, 17 - Pego</a></p>
+                        <p><a href="tel:+34966409960">+34 966 409 960</a></p>
+                        <p><a href="mailto:03007613@edu.gva.es">03007613@edu.gva.es</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../faqs/faqs.html">FAQs</a></li>
+                        <li><a href="../avisoLegal/avisoLegal.html">Aviso legal</a></li>
+                        <li><a href="../politicaCookies/politicaCookies.html">Política de cookies</a></li>
+                        <li><a href="../politicaPrivacidad/politicaPrivacidad.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletters</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Indica tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Indica tu email">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="checkboxCondicions">
+                            <label class="form-check-label" for="checkboxCondicions">Acepto <a href="../terminos_condiciones/terminos_condiciones.html">términos</a> y <a href="../terminos_condiciones/terminos_condiciones.html">condiciones</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscríbete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
 {% endblock %}
