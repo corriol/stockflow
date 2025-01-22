@@ -22,18 +22,18 @@
     background-color: var(--taronja);
 }
 
+.btn-orange{
+    background-color: var(--taronja);
+    border: 1px solid var(--blauClar);
+    color: white;
+}
+
 #logo_header{
     width: 12em;
 }
 
 .text-blue{
     color: var(--blauClar);
-}
-
-.btn-orange{
-    background-color: var(--taronja);
-    color: white;
-    border: 1px solid var(--blauClar);
 }
 
 .btn-orange:hover{
