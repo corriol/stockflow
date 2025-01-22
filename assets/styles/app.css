@@ -26,6 +26,19 @@
     width: 12em;
 }
 
+
+.bg-orange{
+    background-color: var(--taronja);
+}
+
+.border-orange{
+    border: 1px solid var(--taronja)
+}
+
+.border-light-blue{
+    border: 2px solid var(--blauClar);
+}
+
 .text-blue{
     color: var(--blauClar);
 }
