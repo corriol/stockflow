@@ -25,86 +25,124 @@
 
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <a href="{{ url('app_index')}}"><img class="img-fluid" src="{{ asset("images/base/logo_header.png") }}" alt="Logo"></a>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <ul>
-                    <li class="dropdown">
-                        PRODUCTO <span>^</span>
-                        <ul>
-                            <li><a href="{{ url('app_descarrega') }}">DESCARGA DE PRODUCTO</a></li>
-                            <li><a href="{{ url('app_plans_preus') }}">PLANES Y PRECIOS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ url('app_casos_exit') }}">CASOS DE ÉXITO</a></li>
-                    <li><a href="{{ url('app_resenyes') }}">RESEÑAS</a></li>
-                </ul>
-                <ul>
-                    <li><a href="{{ url('app_qui_som') }}">QUIÉNES SOMOS</a></li>
-                    <li><a href="{{ url('app_blog_index') }}">BLOG</a></li>
-                    <li><a href="{{ url('app_contacte') }}">CONTACTO</a></li>
-                </ul>
-                <a href="{{ url('app_descripcio_producte') }}"><button>DEMO</button></a>
-                <i class="fa-solid fa-bars"></i>
+    <header class="row bg-body-secondary pb-2">
+            <div class="col-3">
+                <div class="pt-2 ps-3 d-flex justify-content-start align-items-center">
+                    <img src="{{ asset("images/base/logo_header.png") }}" id="logo_header" alt="" class="pt-1 pb-1">
+                    <i class="bi bi-search fs-2 ps-3"></i>
+                </div>
             </div>
-        </div>
-    </header>
+            <div class="col-9 d-flex align-items-center justify-content-end">
+                <div class="">
+                    <nav class="d-none d-xl-flex align-items-center justify-content-end">
+                        <ul class="nav pt-2">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-blue" data-bs-toggle="dropdown" href="#"
+                                    role="button" aria-expanded="false">PRODUCTO</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-blue" href="{{ url('app_descarrega') }}">DESCARGA DE PRODUCTO</a></li>
+                                    <li><a class="dropdown-item text-blue" href="{{ url('app_plans_preus') }}">PLANES Y PRECIOS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="{{ url('app_casos_exit') }}">CASOS DE ÉXITO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="{{ url('app_resenyes') }}">RESEÑAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="{{ url('app_qui_som') }}">QUIÉNES SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="{{ url('app_blog_index') }}">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="{{ url('app_contacte') }}">CONTACTO</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-danger px-2 py-0 rounded-2 me-3 mt-2"><a href="{{ url('app_descripcio_producte') }}" class="text-white text-decoration-none">DEMO</a></button>
+                    </nav>
+                </div>
+            </div>
+        </header>
     
     <main class="container">
         {% block main %}
         {% endblock %}
     </main>
 
-    <footer class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <a href="https://www.google.es/maps/place/Carrer+Duanes,+17,+03780+Pego,+Alacant/">
-                        <i class="fa-location-dot"></i>
-                    </a>
-                    <p>C/Duanes, 17 - Pego</p>
-                    <a href="../contactar/contactar.html"><i class="fa-solid fa-phone"></i></a>
-                    <p>+34 966 409 960</p>
-                    <a href="../contactar/contactar.html"><i class="fa-solid fa-envelope"></i></a>
-                    <p>03007613@edu.gva.es</p>
-                </div>
-                <div class="col-3">
-                    <p>Legal</p>
-                    <ul>
-                        <li><a href="../faqs/faqs.html">FAQs</a></li>
-                        <li><a href="../avisoLegal/avisoLegal.html">Aviso legal</a></li>
-                        <li><a href="../politicaCookies/politicaCookies.html">Política de cookies</a></li>
-                        <li><a href="../politicaPrivacidad/politicaPrivacidad.html">Política de privacidad</a></li>
-                    </ul>
-                    <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="col-5">
-                    <p>NEWSLETTERS</p>
-                    <form>
-                        <p>* Nombre</p>
-                        <input type="text" placeholder="Indica tu nombre">
-                        <p>* Email</p>
-                        <input type="text" placeholder="Indica tu email">
-                        <input type="checkbox">
-                        <label>Acepto <a href="../terminos_condiciones/terminos_condiciones.html">términos</a> y 
-                            <a href="../terminos_condiciones/terminos_condiciones.html">condiciones</a>
-                        </label>
-                        <button>Suscríbete</button>
-                    </form>
+    <footer class="row bg-dark-blue">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 ps-xl-0 ps-xxl-5 pe-0">
+                            <div class="ps-md-5 ps-xl-2 ps-xxl-5 ">
+                                <img src="{{ asset("images/base/logo_footer.png") }}" alt="" class="ps-4 pt-3 ps-md-5 pt-md-4 mt-xl-2 mt-xxl-1 ps-xxl-4 ms-1">
+                                <div class="ms-md-1 ps-md-1 ms-xl-2 ps-xl-2 pt-xl-5 mt-xl-4 ps-xxl-3 pt-xxl-3 mt-xxl-3 ms-xxl-1 text-white">
+                                    <div class="d-flex pt-xl-3 pt-xxl-2 mt-1">
+                                        <i class="bi bi-geo-alt-fill fs-3 text-white"></i>
+                                        <p class="pt-2 mt-1 ps-2 text-white">C/Duanes, 17 - Pego</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-telephone-fill fs-3 text-white"></i>
+                                        <p class="text-white pt-2 ps-2">+34 966 409 960</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-envelope-fill fs-3 text-white"></i>
+                                        <p class="text-white pt-1 mt-2 ps-2">03007613@edu.gva.es</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="text-center text-white mt-xl-1 pt-4">
+                                <h5 class="pt-2 fs-6 fw-bold pb-xl-3 pb-xxl-1">Legal</h5>
+                                <p class="mb-0 pt-5 mt-xl-4 mt-xxl-3"><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Aviso legal</a></p>
+                                <p class="mb-0"><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Política de cookies</a></p>
+                                <p class="mb-0"><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Política de privacidad</a></p>    
+                                <p class="pt-5 mt-xl-1 fs-3 d-flex justify-content-center gap-4">
+                                    <i class="bi bi-twitter text-white pe-1"></i>
+                                    <i class="bi bi-linkedin text-white pe-1"></i>
+                                    <i class="bi bi-youtube text-white"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xl-4 ps-xl-4 pe-xl-4 pe-xxl-5 ps-xxl-0">
+                            <form class="text-center text-white ms-xl-1  ps-4 pt-2 pe-xxl-5 me-xxl-4 pb-1">
+                                <h5 class="fs-6 fw-bold pt-1 mt-1">NEWSLETTERS</h5>
+                                <label for="nombre" class="text-white">* Nombre</label>
+                                <input type="text" class="form-control mt-2" id="nombre">
+
+                                <label for="email" class="text-white pt-3">* Email</label>
+                                <input type="email" class="form-control mt-2 mb-1" id="email">
+
+                                <input class="form-check-input mt-3" type="checkbox" id="check">
+                                <label for="" class="text-white ps-xl-4 ps-xxl-2 pt-xxl-2 mt-1" id="check">Acepto los <a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">términos</a> y <a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">condiciones</a></label>
+                                
+                                <button type="button" class="btn btn-primary btn-danger mt-3 py-1 px-2 rounded-3 mb-2">Suscríbete</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div class="container-fluid">
+            <div class="col-1"></div>
+        </footer>
         <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6">
-                <p>© Copyright 2024. Todos los derechos reservados</p>
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6 pe-xxl-5 ">
+                            <div class="text-end pe-xxl-5">
+                                <p class="py-3 pe-xl-3 pe-xxl-4 me-2">© Copyright 2024. Todos los derechos reservados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-1"></div>
         </div>
     </div>
 </body>

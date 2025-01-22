@@ -27,3 +27,7 @@
 .border-light-blue{
     border: 2px solid var(--blauClar);
 }
+
+#logo_header{
+    width: 12em;
+}
