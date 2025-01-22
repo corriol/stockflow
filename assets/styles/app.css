@@ -22,17 +22,20 @@
     background-color: var(--taronja);
 }
 
-#logo_header{
-    width: 12em;
-}
-
-
-.bg-orange{
-    background-color: var(--taronja);
+.bg-light-blue{
+    background-color: var(--blauClar);
 }
 
 .border-orange{
     border: 1px solid var(--taronja)
+}
+
+.border-light-blue{
+    border: 1px solid var(--blauClar);
+}
+
+#logo_header{
+    width: 12em;
 }
 
 .border-light-blue{
