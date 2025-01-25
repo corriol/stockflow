@@ -1,7 +1,119 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Stockflow{% endblock %}
+{% block title %}Casos de Exito{% endblock %}
 
 {% block main %}
-<h1>Descàrrega de producte i compra</h1>
+
+<main class="container">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1>Casos de Éxito</h1>
+              <p>
+                StockFlow se enorgullece de colaborar con empresas líderes
+                como Microsoft, Apple, Ubisoft y Amazon. Descubre cómo
+                nuestras soluciones a medida han contribuido al éxito de sus
+                negocios y cómo hemos construido relaciones sólidas y
+                duraderas.
+              </p>
+            </div>
+            <div>
+              <a href="./contacte.html.twig"><button>Cuéntanos tu experiencia</button></a>
+            </div>
+          </div>
+          <div class="col-6">
+          
+            <img src=" {{ asset("/images/imatgescasos/01-caso-exito.png") }}" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+           
+              <img src=" {{ asset("/images/imatgescasos/01-amazon.png") }}" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <h1>Amazon</h1>
+              <p>
+                Al optimizar la gestión de sus devoluciones, Amazon pudo
+                mejorar la experiencia del cliente y reducir los costos
+                asociados a este proceso.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1>Apple</h1>
+              <p>
+                Gracias a nuestra solución de transporte prioritario, Apple
+                garantizó la entrega a tiempo de sus nuevos productos en
+                todo el mundo, superando las expectativas de los
+                consumidores.
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+            
+              <img src="{{ asset("/images/imatgescasos/02-apple.png") }}" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <img src=" {{ asset("/images/imatgescasos/03-microsoft.png") }}" " class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <h1>Microsoft</h1>
+              <p>
+                Al implementar nuestro sistema de gestión de inventario,
+                Microsoft pudo reducir sus tiempos de respuesta a los
+                clientes en un 20%, optimizando sus operaciones en la región
+                de EMEA.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1>Ubisoft</h1>
+              <p>
+                Con nuestra plataforma de seguimiento en tiempo real,
+                Ubisoft logró una mayor visibilidad de sus envíos,
+                reduciendo significativamente las pérdidas y mejorando la
+                satisfacción de sus clientes.
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <img src=" {{ asset("/images/imatgescasos/04-ubisoft.png") }}" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</main>
+
+
+
+
 {% endblock %}
