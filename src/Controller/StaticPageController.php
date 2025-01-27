@@ -77,4 +77,10 @@ class StaticPageController extends AbstractController
             'controller_name' => 'StaticPageController',
         ]);
     }
+
+    #[Route('/termes-condicions', name: 'app_termes_condicions')]
+    public function termesCondicions(): Response
+    {
+        return $this->render('static_page/terminos-condiciones.html.twig');
+    }
 }

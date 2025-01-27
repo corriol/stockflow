@@ -85,7 +85,7 @@
         {% endblock %}
     </main>
 
-    <footer class="row bg-dark-blue mt-5">
+     <footer class="row bg-dark-blue mt-5">
             <div class="col-1"></div>
             <div class="col-10">
                 <div class="container">
@@ -151,10 +151,7 @@
                                 <div
                                     class="d-flex flex-xl-column justify-content-center  flex-xxl-row pt-2 mt-2 justify-content-xxl-between pt-xxl-3 mt-xxl-1 ps-xxl-1">
                                     <input class="form-check-input me-2" type="checkbox" id="check">
-                                    <label for="" class="text-white" id="check">Acepto los <a href="#"
-                                            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">términos</a>
-                                        y <a href="#"
-                                            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">condiciones</a></label>
+                                    <label for="" class="text-white" id="check">Acepto los <a href="{{ url ('app_termes_condicions')}}">términos y condiciones</a></label>
                                 </div>
 
                                 <div>

@@ -10,7 +10,12 @@
         <span><i class="fa fa-user"></i> {{ post.author.fullName }}</span>
     </p>
 
+     {{ include('blog/_post_tags.html.twig') }}
+
     <p>{{ post.summary }}</p>
 
-    {{ include('blog/_post_tags.html.twig') }}
+           <a href="{{ path('blog_post', {slug: post.slug}) }}">
+            Leer más</a>
+
+   
 </article>
