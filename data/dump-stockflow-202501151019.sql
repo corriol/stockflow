@@ -211,7 +211,7 @@ CREATE TABLE `user` (
   `username` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL,
-  `roles` json NOT NULL COMMENT '(DC2Type:json)',
+  `roles` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_8FB094A1F85E0677` (`username`),
   UNIQUE KEY `UNIQ_8FB094A1E7927C74` (`email`)
@@ -224,7 +224,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Cristina','cris_admin','cris_admin@symfony.com','cristinaBlog','admin');
+INSERT INTO `user` VALUES (1,'Cristina','cris_admin','cris_admin@symfony.com','cristinaBlog','[\"ROLE_ADMIN\"]');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
