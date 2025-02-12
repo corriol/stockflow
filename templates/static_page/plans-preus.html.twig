@@ -4,194 +4,371 @@
 
 {% block main %}
         <div class="row">
-            <div class="col-1"></div> 
-            <div class="col-10 mb-5 pb-3">
+            <div class="col-lg-1"></div>
+
+            <div class="col-lg-10">
+                <div class="container-fluid">
+                    <div class="row pt-5">
+                        <div class="col-12 text-center colorLletra">
+                            <h1 class="h3 fw-bold">PLANES Y PRECIOS</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row pt-4">
+                        <div class="col-12">
+                            <p class="colorLletra">Hemos diseñado dos planes que se adaptan a las necesidades de tu
+                                almacén, ya sea <span class="fw-bold">pequeño o grande.</span>
+                                Ambos planes ofrecen la misma calidad de servicio y atención al cliente, pero con
+                                diferentes niveles de funcionalidad
+                                para ajustarse al tamaño y los requisitos de tu operación</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="text-center fw-bold pt-4">Planes y precios</h1>
+                            <div class="d-block d-xl-none rounded-4 p-3 mb-1 text-center fw-bold fondoBlauOscur">
+                                <p class="m-0 textwhite">BÁSICO</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-12 pt-3 lh-lg ">
-                            <p>Hemos diseñado dos planes que se adaptan a las necesidades de tu almacén, ya sea <span class="negrita">pequeño o grande.</span>
-                            Ambos planes ofrecen la misma calidad de servicio y atención al cliente, pero con diferentes niveles de funcionalidad
-                            para ajustarse al tamaño y los requisitos de tu operación.
-                            </p>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row mt-lg-4">
+                        <div class="col-6 col-lg-4 mt-lg-5">
+                            <div class="fondoBlau rounded-4 mt-lg-3">
+                                <div
+                                    class="text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">TIPO DE EMPRESA</p>
+                                </div>
+                                <div
+                                    class="text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">USUARIOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">GESTIÓN INVENTARIOS Y PEDIDOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">GESTIÓN DE MOVIMIENTOS DE PRODUCTOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">GESTIÓN DE LOTES Y CADUCIDADES</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">GESTIÓN DE INCIDENCIAS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">AUTOMATIZACIÓN DE PROCESOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">INFORMES Y REPORTES AVANZADOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">IMPORTACIÓN DE ORDENES VIA CSV</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">INTEGRACIÓN CON API EXTERNA</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">SOPORTE TELEFÓNICO 24/7</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">HASTA 100 ARTÍCULOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">100-499 ARTICULOS</p>
+                                </div>
+                                <div class="pe-2 ps-2 text-center sizeTaula align-content-center">
+                                    <p class="m-0 textwhite">MÁS DE 500 ARTICULOS</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row mt-5 gx-5">
-                        <div class="col-4">
-                            <div class="pt-5 mt-3 pb-1">
-                                
-                            </div>
-                            <div class="border rounded-4 text-center bg-light-blue border-light-blue text-white">
-                                <div class="border-bottom border-white">
-                                    <p class="mb-1 py-4 text-white">TIPO DE EMPRESA</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">USUARIOS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">GESTIÓN INVENTARIOS Y PEDIDOS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">GESTIÓN DE MOVIMIENTOS DE PRODUCTOS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">GESTIÓN DE LOTES Y CADUCIDADES</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">GESTIÓN DE INCIDENCIAS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">AUTOMATIZACIÓN DE PROCESOS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">INFORMES Y REPORTES AVANZADOS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">IMPORTACIÓN DE ORDENES VIA CSV</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">INTEGRACIÓN CON API EXTERNA</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">SOPORTE TELEFÓNICO 24/7</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">HASTA 100 ARTÍCULOS</p>
-                                </div>
-                                <div class="border-bottom border-white">
-                                    <p class="mb-0 py-3 text-white">100-499 ARTICULOS</p>
-                                </div>
-                                <div class="">
-                                    <p class="mb-0 py-3 text-white">MÁS DE 500 ARTICULOS</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="rounded-4 border border-black text-center py-3 bg-dark-blue text-white">
-                                <p class="mb-0 fw-bold text-white">BÁSICO</p>
+                        <div class="col-6 col-lg-4">
+                            <div class="d-none d-lg-block rounded-4 p-3 mb-1 text-center fw-bold fondoBlauOscur">
+                                <p class="m-0 textwhite">BÁSICO</p>
                             </div>
 
-                            <div class="border-light-blue rounded-4 mt-2 text-center px-2 text-primary-emphasis">
-                                <div class="border-bottom border-black">
-                                    <p class="mb-0 py-1">Ideal para empresas que recién comienzan a digitalizar su gestión de almacén</p>
+                            <div class="fonsGris rounded-4 border border-3 colorBorde">
+                                <div
+                                    class="ms-2 me-2 text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0 colorLletra fs-mb">Ideal para empresas que recién comienzan a
+                                        digitalizar su
+                                        gestión de almacén</p>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <p class="mb-0 py-1 fw-bold">1 usuario administrador 2 usuarios normales</p>
+                                <div
+                                    class="ms-3 me-3 ps-lg-4 pe-lg-4 text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0 colorLletra fw-bold fs-mb">1 usuario administrador 2 usuarios normales
+                                    </p>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="fbi bi-check-lg fs-3 check" aria-label="si"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-4 text-success fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg fs-3 check" aria-label="si"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg  fs-3 check" aria-label="si"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg fs-3 check" aria-label="si"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg fs-3 check" aria-label="si"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-xmark py-3  text-danger fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-x-lg fs-3 text-danger" aria-label="no"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-xmark py-3 text-danger fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-x-lg fs-3 text-danger" aria-label="no"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-xmark py-3 text-danger fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-x-lg fs-3 text-danger" aria-label="no"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg check fs-3" aria-label="si"></i>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <p class="py-3 mb-0">50 €/mes</p>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0">50 €/mes</p>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <p class="py-3 mb-0">100 €/mes</p>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0">100 €/mes</p>
                                 </div>
-                                <div class="border-bottom border-black">
-                                    <p class="py-3 mb-0">200 €/mes</p>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde linea-mb">
+                                    <p class="m-0">200 €/mes</p>
                                 </div>
-                                <div class="">
-                                    <div class="pb-3">
-                                        <div class="py-3">
-                                            <button class="btn btn-danger"><a href="../descarrega/descarrega.html" class="text-decoration-none text-white">SOLICITAR DEMO</a></button>
+                                <div class="p-3 d-none d-lg-block">
+                                    <div class="d-block">
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <button class="btn btn-danger"><a href="../descarrega/descarrega.html"
+                                                    class="text-decoration-none text-white"
+                                                    title="Solicitar una demostración de nuestro producto"
+                                                    aria-label="Solicitar una demostración de nuestro producto">
+                                                    SOLICITAR DEMO</a></button>
                                         </div>
-                                        <a href="../descarrega/descarrega.html" class="text-danger">Comprar ahora</a>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="../descarrega/descarrega.html" class="text-danger"
+                                                title="Comprar el producto ahora"
+                                                aria-label="Comprar el producto ahora">
+                                                Comprar ahora</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
-                            <div class="rounded-4 border border-orange text-center py-3 bg-orange border-orange">
-                                <p class="mb-0 fw-bold text-white">AVANZADO</p>
-                            </div>
-                            <div class="border-light-blue rounded-4 mt-2 text-center px-2">
-                                <div class="border-bottom border-black">
-                                    <p class="mb-0 py-1">Diseñado para empresas con operaciones más complejas y grandes volúmenes de inventario</p>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <p class="mb-0 py-3 fw-bold">Usuarios ILIMITADOS</p>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-4 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <i class="fa-solid fa-check check py-3 text-success fs-4"></i>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <p class="py-3 mb-0">50 €/mes</p>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <p class="py-3 mb-0">100 €/mes</p>
-                                </div>
-                                <div class="border-bottom border-black">
-                                    <p class="py-3 mb-0">200 €/mes</p>
-                                </div>
-                                <div class="">
-                                    <div class="pb-3">
-                                        <div class="py-3">
-                                            <button class="btn btn-danger"><a href="../descarrega/descarrega.html" class="text-decoration-none text-white">SOLICITAR DEMO</a></button>
-                                        </div>
-                                        <a href="../descarrega/descarrega.html" class="text-danger">Comprar ahora</a>
+                        <div class="container-fluid d-block d-lg-none">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <button class="btn btn-danger w-100"><a href="../descarrega/descarrega.html"
+                                                class="text-decoration-none text-white"
+                                                title="Solicitar una demostración de nuestro producto"
+                                                aria-label="Solicitar una demostración de nuestro producto">
+                                                SOLICITAR DEMO</a></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+
+                        <div class="container-fluid d-block d-xl-none">
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="rounded-4 p-3 mb-1 text-center fw-bold fonsTaronja">
+                                        <p class="m-0 textwhite">AVANZADO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 d-block d-lg-none">
+                            <div class="fondoBlau rounded-4 mt-lg-3">
+                                <div
+                                    class="text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">TIPO DE EMPRESA</p>
+                                </div>
+                                <div
+                                    class="text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">USUARIOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">GESTIÓN INVENTARIOS Y PEDIDOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">GESTIÓN DE MOVIMIENTOS DE PRODUCTOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">GESTIÓN DE LOTES Y CADUCIDADES</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">GESTIÓN DE INCIDENCIAS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">AUTOMATIZACIÓN DE PROCESOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">INFORMES Y REPORTES AVANZADOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">IMPORTACIÓN DE ORDENES VIA CSV</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">INTEGRACIÓN CON API EXTERNA</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">SOPORTE TELEFÓNICO 24/7</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2 ">
+                                    <p class="m-0 textwhite">HASTA 100 ARTÍCULOS</p>
+                                </div>
+                                <div
+                                    class="pe-2 ps-2 text-center sizeTaula align-content-center border-bottom border-white border-2">
+                                    <p class="m-0 textwhite">100-499 ARTICULOS</p>
+                                </div>
+                                <div class="pe-2 ps-2 text-center sizeTaula align-content-center">
+                                    <p class="m-0 textwhite">MÁS DE 500 ARTICULOS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <div class="d-none d-lg-block rounded-4 p-3 mb-1 text-center fw-bold fonsTaronja">
+                                <p class="m-0 textwhite">AVANZADO</p>
+                            </div>
+
+                            <div class="fonsGris rounded-4 border border-3 colorBorde">
+                                <div
+                                    class="ms-lg-2 me-lg-2 text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0 colorLletra fs-mb">Diseñado para empresas con operaciones más
+                                        complejas y
+                                        grandes volúmenes de inventario</p>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  ps-4 pe-4 text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0 colorLletra fw-bold fs-mb">Usuarios ILIMITADOS</p>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="fbi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg  fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="fbi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="fbi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="fbi bi-check-lg fs-3 check" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <i class="bi bi-check-lg check fs-3" aria-label="si"></i>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0">50 €/mes</p>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde">
+                                    <p class="m-0">100 €/mes</p>
+                                </div>
+                                <div
+                                    class="ms-2 me-2  text-center sizeTaula align-content-center border-bottom border-2 colorBorde linea-mb">
+                                    <p class="m-0">200 €/mes</p>
+                                </div>
+                                <div class="p-3 d-none d-lg-block">
+                                    <div class="d-block">
+                                        <div class="d-flex justify-content-center mb-2">
+                                            <button class="btn btn-danger"><a href="../descarrega/descarrega.html"
+                                                    class="text-decoration-none text-white"
+                                                    title="Solicitar una demostración de nuestro producto"
+                                                    aria-label="Solicitar una demostración de nuestro producto">
+                                                    SOLICITAR DEMO</a></button>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="../descarrega/descarrega.html" class="text-danger"
+                                                title="Comprar el producto ahora"
+                                                aria-label="Comprar el producto ahora">
+                                                Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid d-block d-lg-none">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <button class="btn btn-danger w-100"><a href="../descarrega/descarrega.html"
+                                                class="text-decoration-none text-white"
+                                                title="Solicitar una demostración de nuestro producto"
+                                                aria-label="Solicitar una demostración de nuestro producto">
+                                                SOLICITAR DEMO</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-1 mb-5"></div>
-        </div> 
+
+            <div class="col-1"></div>
+        </div>
 {% endblock %}
