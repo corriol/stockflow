@@ -1,113 +1,80 @@
-:root{
-    --blauFosc: #222831;
-    --blauClar: #30475E;
-    --taronja: #FF7000;
-    --gris: #ECECEC;
-    --title: #FF7F50;
-    --badge: #DC3545;
-    --logout: #A52A2A;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primary: #222831;
+  --color-secondary: #30475e;
+  --color-accent: #ff7000;
+  --color-background: #ececec;
 }
 
-
-*{
-    color: var(--blauClar);
-    font-family: "Noto Serif", serif;
+* {
+  font-family: "Noto Serif", serif !important;
 }
 
-.bg-grey{
-    background-color: var(--gris);
+body {
+  padding-top: 8.3em
 }
 
-.bg-orange{
-    background-color: var(--taronja);
+/* HEADER */
+nav {
+  background-color: var(--color-background);
 }
 
-.bg-light-blue{
-    background-color: var(--blauClar);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.navbar-brand,
+.nav-link,
+.dropdown-item {
+  color: var(--color-secondary) !important;
 }
 
-.border-orange{
-    border: 1px solid var(--taronja)
+#logo {
+  width: 10.4em;
 }
 
-.border-light-blue{
-    border: 1px solid var(--blauClar);
+.border-primary-sf {
+  border-color: var(--color-secondary) !important;
 }
 
-#logo_header{
-    width: 12em;
+.nav-link:hover,
+.dropdown-item:hover {
+  color: white !important;
+  background-color: var(--color-secondary) !important;
 }
 
-.border-light-blue{
-    border: 2px solid var(--blauClar);
+.btn-accent-sf {
+  color: white;
+  background-color: var(--color-accent);
+  border: 1px solid black;
 }
 
-.text-blue{
-    color: var(--blauClar);
+.btn-accent-sf:hover {
+  color: white;
+  background-color: var(--color-secondary);
 }
 
-.btn-orange{
-    background-color: var(--taronja);
-    color: white;
-    border: 1px solid var(--blauClar);
+@media (max-width: 950px) {
+  #brand-wrapper {
+    width: 100%;
+  }
 }
 
-.btn-orange:hover{
-    background-color: var(--blauClar);
-    color: white;
+footer {
+  background-color: var(--color-primary);
 }
 
-.btn-blue{
-    background-color: var(--blauClar);
-    color: white;
-    border: 1px solid var(--blauClar);
+#logo-footer {
+  width: 9.5em;
 }
 
-.btn-blue:hover{
-    background-color: var(--blauClar);
-    color: white;
-    opacity: 0.75;
+.btn-taronja {
+  color: white !important;
+  background-color: var(--color-accent) !important;
+  border: 1px solid var(--color-secondary) !important;
 }
-
-.bg-dark-blue{
-    background-color: var(--blauFosc);
-}
-
-nav a:link,
-nav a:visited{
-    color: var(--blauClar) !important;
-}
-
-nav a:hover{
-    color: white !important;
-}
-
-nav ul li:hover a:hover{
-    background-color: var(--blauClar);
-    color: white;
-}
-
-
-.border-end-blue{
-    border-right: 1px solid var(--blauClar);
-}
-
-
-.btn-orange{
-    background-color: var(--taronja);
-    color: white;
-    border: 1px solid var(--blauClar);
-}
-
-.btn-orange:hover{
-    background-color: var(--blauClar);
-    color: white;
-}
-
-
- @media (max-width: 752px) { 
-    #logo_header{
-        width: 5em;
-    }
- }
 

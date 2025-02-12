@@ -1,0 +1,42 @@
+.colorLletra {
+    color: var(--color-secondary) !important;
+}
+
+.fonsGris {
+    background-color: var(--color-background) !important;
+}
+
+.fondoBlau {
+    background-color: var(--color-secondary);
+}
+
+.fondoBlauOscur {
+    background-color: var(--color-primary);
+}
+
+.fonsTaronja {
+    background-color: var(--color-accent);
+}
+
+.colorBorde {
+    border-color: var(--color-secondary) !important;
+}
+
+.textwhite {
+    color: white !important;
+}
+
+/*taula*/
+.sizeTaula {
+    height: 4.6em;
+}
+
+.check {
+    color: green;
+}
+
+@media (max-width: 560px) {
+    .fs-mb {
+        font-size: 0.7em;
+    }
+}
