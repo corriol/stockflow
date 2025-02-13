@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}            
+        Stockflow
+        {% endblock %}
+    </title>
+
+    <!-- Espai per a CSS específics de cada pàgina -->
+    {% block stylesheets %}    
+    {% endblock %}
+
+    {% block javascripts %}
+        {% block importmap %}{{ importmap() }}{% endblock %}
+    {% endblock %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <header class="row bg-body-secondary pb-2 sticky-top mb-5">
+            <div class="col-12 col-xl-3">
+                <div class="pt-2 ps-3 d-flex justify-content-xl-start justify-content-between align-items-center">
+                    <img src="{{ asset("images/base/logo_header.png") }}" id="logo_header" alt="" class="pt-1 pb-1">
+                    <i class="bi bi-search fs-2 ps-3"></i>
+                    <nav class="d-xl-none navbar pe-1">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-12 col-xl-9 d-flex align-items-center justify-content-xl-end">
+                <div class="">
+                    <nav class="collapse d-xl-flex align-items-center pe-3" id="navbarToggleExternalContent">
+                        <ul class="nav pt-2 px-2 pe-3 flex-column flex-xl-row">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-blue px-2" data-bs-toggle="dropdown" href="#"
+                                    role="button" aria-expanded="false">PRODUCTO</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-blue" href="{{ url('app_descarrega') }}">DESCARGA DE PRODUCTO</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-blue" href="{{ url('app_plans_preus') }}">PLANES Y PRECIOS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue px-2" href="{{ url('app_casos_exit') }}">CASOS DE ÉXITO</a>
+                            </li>
+                            <li class="nav-item border-end-blue">
+                                <a class="nav-link text-blue px-2" href="{{ url('app_resenyes') }}">RESEÑAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue px-2" href="{{ url('app_qui_som') }}">QUIÉNES SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue px-2" href="{{ url('app_blog_index') }}">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue px-2" href="{{ url('app_contacte') }}">CONTACTO</a>
+                            </li>
+                        </ul>
+                        <button class="btn-orange px-2 py-0 rounded-2 mt-2">DEMO</button>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+    
+    <main class="container">
+        {% block main %}
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 col-12">
+                <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                    <h1 class="text-uppercase fw-bold h3">¡Hola! ¿En que podemos ayudarte?</h1>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 col-12">
+                    <div class="position-relative d-flex align-items-center justify-content-center gap-3">
+                        <input class="w-100 p-1 ps-3" placeholder="Buscar" type="text">
+                        <i class="bi bi-search fs-4 iconoBuscador"></i>
+                    </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6 col-12">
+                    <div class="d-flex justify-content-md-start justify-content-center">
+                        <h3 class="fw-bold">Guías para empezar</h3>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                    <div class="d-flex justify-content-md-end justify-content-center">
+                        <button class="p-1 px-2 text-white border-black rounded-2 w-75 botonGuia">
+                        < Descubre todos los temas
+                        </button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-3 text-center mb-4">
+                        <img class="w-100" src="./img/imgPasos1.jpg" alt="">
+                        <a class="text-decoration-none text-reset fw-bold textoNaranja" target="_blank"
+                        href="./pdf/guia1 - Guía para configurar tu aplicación de manera rápida.pdf">Guía para configurar
+                        tu
+                        aplicación de manera rápida</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-3 text-center mb-4">
+                        <img class="w-100" src="./img/imgPasos2.jpg" alt="">
+                        <a class="text-decoration-none text-reset fw-bold textoNaranja" target="_blank"
+                        href="./pdf/guia2 - Optimiza la gestión de tu almacén con estos consejos.pdf">Optimiza la gestión
+                        de
+                        tu almacén con estos consejos</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-3 text-center mb-4">
+                        <img class="w-100" src="./img/imgPasos3.jpg" alt="">
+                        <a class="text-decoration-none text-reset fw-bold textoNaranja" target="_blank"
+                        href="./pdf/guia3 - Ajusta tu aplicación según tus necesidades.pdf">Ajusta tu aplicación según tus
+                        necesidades</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                    <h2 class="fw-bold">
+                        Preguntas frecuentes
+                    </h2>
+                    </div>
+                </div>
+
+                <div class="row mt-4 d-flex g-4">
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="d-flex flex-column text-center p-3 gap-3 backGris">
+                        <span class="fw-bold">
+                        ¿Cómo puedo agregar nuevos productos al inventario?
+                        </span>
+                        <span class="lh-base">
+                        Desde el panel principal, selecciona "Inventario" y luego "Agregar producto". Completa la información requerida y guarda los cambios. 
+                        </span>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="d-flex flex-column text-center p-3 gap-3 backGris">
+                        <span class="fw-bold">
+                        ¿Cómo puedo agregar nuevos productos al inventario?
+                        </span>
+                        <span class="lh-base">
+                        Desde el panel principal, selecciona "Inventario" y luego "Agregar producto". Completa la información requerida y guarda los cambios. 
+                        </span>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="d-flex flex-column text-center p-3 gap-3 backGris">
+                        <span class="fw-bold">
+                        ¿Cómo puedo agregar nuevos productos al inventario?
+                        </span>
+                        <span class="lh-base">
+                        Desde el panel principal, selecciona "Inventario" y luego "Agregar producto". Completa la información requerida y guarda los cambios. 
+                        </span>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="d-flex flex-column text-center p-3 gap-3 backGris">
+                        <span class="fw-bold">
+                        ¿Cómo puedo agregar nuevos productos al inventario?
+                        </span>
+                        <span class="lh-base">
+                        Desde el panel principal, selecciona "Inventario" y luego "Agregar producto". Completa la información requerida y guarda los cambios. 
+                        </span>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="d-flex flex-column text-center p-3 gap-3 backGris">
+                        <span class="fw-bold">
+                        ¿Cómo puedo agregar nuevos productos al inventario?
+                        </span>
+                        <span class="lh-base">
+                        Desde el panel principal, selecciona "Inventario" y luego "Agregar producto". Completa la información requerida y guarda los cambios. 
+                        </span>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="d-flex flex-column text-center p-3 gap-3 backGris">
+                        <span class="fw-bold">
+                        ¿Cómo puedo agregar nuevos productos al inventario?
+                        </span>
+                        <span class="lh-base">
+                        Desde el panel principal, selecciona "Inventario" y luego "Agregar producto". Completa la información requerida y guarda los cambios. 
+                        </span>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <a class="text-decoration-none text-reset textoNaranja" href="#">
+                        Ver más
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        {% endblock %}
+    </main>
+
+     <footer class="row bg-dark-blue mt-5">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-4 ps-xl-0 ps-xxl-5 pe-0 ">
+                            <div class=" ps-md-5 ps-xl-2 ps-xxl-5 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{ asset("images/base/logo_footer.png") }}" alt=""
+                                    class="ps-sm-5 pt-4 ps-xl-4 mt-xl-0 mt-xxl-1 ps-xxl-4 ms-1">
+                                <div
+                                    class="ms-4 pt-2 ps-1 ms-xl-2 ps-xl-2 pt-xl-5 mt-xl-4 ps-xxl-3 pt-xxl-3 mt-xxl-3 ms-xxl-1 text-white">
+                                    <div class="d-flex pt-xl-3 pt-xxl-2 mt-1">
+                                        <i class="bi bi-geo-alt-fill fs-3 text-white"></i>
+                                        <p class="pt-2 mt-1 ps-2 text-white">C/Duanes, 17 - Pego</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-telephone-fill fs-3 text-white"></i>
+                                        <p class="text-white pt-2 ps-2">+34 966 409 960</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-envelope-fill fs-3 text-white"></i>
+                                        <p class="text-white pt-1 mt-2 ps-2 mb-0">03007613@edu.gva.es</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="text-center text-white d-flex flex-column gap-2 pt-3 gap-xl-5 pt-md-4 ">
+                                <h5 class="fs-6 fw-bold mt-2 mt-md-2">Legal</h5>
+                                <div class="pt-4 mt-3 pt-xxl-0">
+                                    <p class="mb-0"><a href="#"
+                                            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Aviso
+                                            legal</a></p>
+                                    <p class="mb-0"><a href="#"
+                                            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Política
+                                            de cookies</a></p>
+                                    <p class="mb-0"><a href="#"
+                                            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Política
+                                            de privacidad</a></p>
+                                </div>
+
+                                <p class="d-flex justify-content-center fs-3 gap-4 pt-4 pt-xxl-1">
+                                    <i class="bi bi-twitter text-white pe-1"></i>
+                                    <i class="bi bi-linkedin text-white pe-1"></i>
+                                    <i class="bi bi-youtube text-white"></i>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xl-4 ps-0 ps-xl-5 pe-xl-4 pe-xxl-5 ps-xxl-0">
+                            <form
+                                class="text-center text-white pt-2 pb-1 ps-2  ms-xl-1 ps-xxl-0 ms-xxl-4 pe-xxl-5 me-xxl-4">
+                                <h5 class="fs-6 fw-bold pt-0 pt-xl-1 mt-1">NEWSLETTERS</h5>
+                                <div class="d-flex flex-column justify-content-between gap-2 ">
+                                    <label for="nombre" class="text-white">* Nombre</label>
+                                    <input type="text" class="form-control" id="nombre">
+                                </div>
+
+                                <div class="d-flex flex-column justify-content-between gap-2 pt-3">
+                                    <label for="email" class="text-white">* Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+
+                                <div
+                                    class="d-flex flex-xl-column justify-content-center  flex-xxl-row pt-2 mt-2 justify-content-xxl-between pt-xxl-3 mt-xxl-1 ps-xxl-1">
+                                    <input class="form-check-input me-2" type="checkbox" id="check">
+                                    <label for="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" id="check">Acepto los <a href="{{ url ('app_termes_condicions')}}" class="">términos y condiciones</a></label>
+                                </div>
+
+                                <div>
+                                    <button type="button"
+                                        class="btn-orange mt-3 py-1 px-2 rounded-3 mb-2 mt-xl-3">Suscríbete</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </footer>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6"></div>
+                        <div class="col-12 col-xl-6 pe-xxl-5 ">
+                            <div class="text-center text-xl-end pe-xxl-5">
+                                <p class="py-3 pe-xl-3 pe-xxl-4 me-xl-2">© Copyright 2024. Todos los derechos reservados
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</body>
+</html>

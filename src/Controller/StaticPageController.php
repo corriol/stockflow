@@ -83,4 +83,10 @@ class StaticPageController extends AbstractController
     {
         return $this->render('static_page/terminos-condiciones.html.twig');
     }
+
+    #[Route('/faqs', name: 'app_faqs')]
+    public function faqs(): Response
+    {
+        return $this->render('static_page/faqs.html.twig');
+    }
 }
