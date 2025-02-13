@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primary: #222831;
+  --color-secondary: #30475e;
+  --color-accent: #ff7000;
+  --color-background: #ececec;
+}
+
+.section {
+  border: 1px solid var(--color-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--color-background);
+  height: 100%;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.colorGris {
+  color: var(--color-background) !important;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--color-background);
+  border-radius: 4px;
+}
+
+.card-header {
+  background-color: var(--color-primary);
+  color: white !important;
+  height: 70px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+}
+
+.paypment-option img {
+  text-align: center;
+}
+
+.active-step {
+  background-color: var(--color-accent);
+  color: var(--gris);
+}
+
+#step1.inactive-step {
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+#step2.inactive-step {
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+#step3.inactive-step {
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.logos {
+  width: 30px;
+}

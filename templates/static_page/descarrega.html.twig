@@ -2,130 +2,189 @@
 
 {% block title %}Stockflow{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/descarrega.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/descarrega.js') }}"></script>
+{% endblock %}
+
 {% block main %}
-<main class="container">
+<main class="container-fluid-mb container-lg" role="main">
     <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
 
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center">DESCARGA DE PRODUCTO Y COMPRA</h1>
-                </div>
+        <main class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center py-5">
+              <h1 class="h3 colorLletra fw-bold">DESCARGA DE PRODUCTO Y COMPRA</h1>
             </div>
 
-            <div class="row">
-                <!-- Información de contacto -->
-                <div class="col-md-4">
-                    <div class="border p-3" onclick="setActiveStep(1)">
-                        <div class="bg-primary text-white rounded-circle text-center mb-2" style="width: 40px; height: 40px; line-height: 40px;">1</div>
-                        <h2 class="h5">Información de Contacto</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre y Apellidos:</label>
-                                <input type="text" id="nombre" class="form-control" placeholder="Indica tu nombre y apellidos">
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefono" class="form-label">Teléfono:</label>
-                                <input type="tel" id="telefono" class="form-control" placeholder="Indica tu teléfono">
-                            </div>
-                            <div class="mb-3">
-                                <label for="correo" class="form-label">Correo Electrónico:</label>
-                                <input type="email" id="correo" class="form-control" placeholder="Indica tu correo electrónico">
-                            </div>
-                        </form>
-                    </div>
+            <!-- Información de contacto -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <div class="card shadow-sm h-100 fonsGris border-0" id="contacto" onclick="setActiveStep(1)">
+                <div class="card-header d-flex align-items-center justify-content-evenly">
+                  <div class="step-number text-white" id="step1">1</div>
+                  <h5 class="mb-0 colorGris">Datos Personales</h5>
                 </div>
-
-                <!-- Método de pago -->
-                <div class="col-md-4">
-                    <div class="border p-3" onclick="setActiveStep(2)">
-                        <div class="bg-primary text-white rounded-circle text-center mb-2" style="width: 40px; height: 40px; line-height: 40px;">2</div>
-                        <h2 class="h5">Método de Pago</h2>
-                        <form>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="metodo" value="tarjetaCredito" id="tarjetaCredito">
-                                <label class="form-check-label" for="tarjetaCredito">Tarjeta de Crédito</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="metodo" value="paypal" id="paypal">
-                                <label class="form-check-label" for="paypal">PayPal</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="metodo" value="googlePay" id="googlePay">
-                                <label class="form-check-label" for="googlePay">Google Pay</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="metodo" value="bizum" id="bizum">
-                                <label class="form-check-label" for="bizum">Bizum</label>
-                            </div>
-                        </form>
+                <div class="card-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre y Apellidos:</label>
+                      <input type="text" id="nombre" class="form-control" placeholder="Indica tu nombre y apellidos"
+                        maxlength="50" required>
                     </div>
-                </div>
-
-                <!-- Detalles del método de pago seleccionado -->
-                <div class="col-md-4">
-                    <div class="border p-3" onclick="setActiveStep(3)">
-                        <div class="bg-primary text-white rounded-circle text-center mb-2" style="width: 40px; height: 40px; line-height: 40px;">3</div>
-                        <h2 class="h5">Detalles del Método de Pago Seleccionado</h2>
-                        <form>
-                            <!-- Tarjeta de crédito -->
-                            <div id="detallesTarjeta" style="display: none;">
-                                <div class="mb-3">
-                                    <label for="numeroTarjeta" class="form-label">Número de Tarjeta:</label>
-                                    <input type="text" id="numeroTarjeta" class="form-control" placeholder="Indica tu número de tarjeta">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="titularTarjeta" class="form-label">Titular de la Tarjeta:</label>
-                                    <input type="text" id="titularTarjeta" class="form-control" placeholder="Indica el titular de la tarjeta">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="iban" class="form-label">CVV:</label>
-                                    <input type="text" id="iban" class="form-control" placeholder="Indica tu CVV">
-                                </div>
-                                <button type="button" class="btn btn-primary w-100">PAGAR</button>
-                            </div>
-
-                            <!-- PayPal -->
-                            <div id="detallesPayPal" style="display: none;">
-                                <div class="mb-3">
-                                    <label for="paypalEmail" class="form-label">Correo Electrónico:</label>
-                                    <input type="email" id="paypalEmail" class="form-control" placeholder="Indica tu correo de PayPal">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="paypalPassword" class="form-label">Contraseña:</label>
-                                    <input type="password" id="paypalPassword" class="form-control" placeholder="Indica tu contraseña de PayPal">
-                                </div>
-                                <button type="button" class="btn btn-primary w-100">PAGAR</button>
-                            </div>
-
-                            <!-- Google Pay -->
-                            <div id="detallesGooglePay" style="display: none;">
-                                <div class="mb-3">
-                                    <label for="googleEmail" class="form-label">Correo Electrónico:</label>
-                                    <input type="email" id="googleEmail" class="form-control" placeholder="Indica tu correo de Google Pay">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="googlePassword" class="form-label">Contraseña:</label>
-                                    <input type="password" id="googlePassword" class="form-control" placeholder="Indica tu contraseña de Google Pay">
-                                </div>
-                                <button type="button" class="btn btn-primary w-100">PAGAR</button>
-                            </div>
-
-                            <!-- Bizum -->
-                            <div id="detallesBizum" style="display: none;">
-                                <div class="mb-3">
-                                    <label for="bizumTelefono" class="form-label">Número de Teléfono:</label>
-                                    <input type="tel" id="bizumTelefono" class="form-control" placeholder="Indica tu número de teléfono de Bizum">
-                                </div>
-                                <button type="button" class="btn btn-primary w-100">PAGAR</button>
-                            </div>
-                        </form>
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label">Teléfono:</label>
+                      <input type="tel" id="telefono" class="form-control" placeholder="Indica tu teléfono"
+                        maxlength="9" required>
                     </div>
+                    <div class="mb-3">
+                      <label for="correo" class="form-label">Correo Electrónico:</label>
+                      <input type="email" id="correo" class="form-control" placeholder="Indica tu correo electrónico"
+                        maxlength="30" required>
+                    </div>
+                  </form>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="col-1"></div>
+
+            <!-- Método de pago -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <div class="card shadow-sm h-100 fonsGris border-0" id="metodoPago" onclick="setActiveStep(2)">
+                <div class="card-header d-flex align-items-center justify-content-evenly">
+                  <div class="step-number text-white" id="step2">2</div>
+                  <h5 class="mb-0 colorGris">Método de Pago</h5>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-check d-flex justify-content-between align-items-center mb-2 py-1">
+                      <input class="form-check-input" type="radio" name="metodo" id="tarjetaCredito"
+                        data-bs-target="#detallesTarjeta" data-bs-toggle="collapse">
+                      <label class="form-check-label flex-grow-1 ms-2" for="tarjetaCredito">
+                        Tarjeta de Crédito
+                      </label>
+                      <img src="img/vissa_logo.png" alt="Visa logo" class="img-fluid logos" loading="lazy">
+                    </div>
+                    <div class="form-check d-flex justify-content-between align-items-center mb-2 py-1">
+                      <input class="form-check-input" type="radio" name="metodo" id="paypal"
+                        data-bs-target="#detallesPayPal" data-bs-toggle="collapse" maxlength="" required>
+                      <label class="form-check-label flex-grow-1 ms-2" for="paypal">
+                        PayPal
+                      </label>
+                      <img src="img/paypal_logo.png" alt="PayPal logo" class="img-fluid logos" loading="lazy">
+                    </div>
+                    <div class="form-check d-flex justify-content-between align-items-center mb-2 py-1">
+                      <input class="form-check-input" type="radio" name="metodo" id="googlePay"
+                        data-bs-target="#detallesGooglePay" data-bs-toggle="collapse">
+                      <label class="form-check-label flex-grow-1 ms-2" for="googlePay">
+                        Google Pay
+                      </label>
+                      <img src="img/google_logo.png" alt="Google Pay logo" class="img-fluid logos" loading="lazy">
+                    </div>
+                    <div class="form-check d-flex justify-content-between align-items-center mb-2 py-1">
+                      <input class="form-check-input" type="radio" name="metodo" id="bizum"
+                        data-bs-target="#detallesBizum" data-bs-toggle="collapse">
+                      <label class="form-check-label flex-grow-1 ms-2" for="bizum">
+                        Bizum
+                      </label>
+                      <img src="img/bizum_logo.jpg" alt="Bizum logo" class="img-fluid logos py-1" loading="lazy">
+                    </div>
+                    <div class="form-check mb-2 py-1">
+                      <input class="form-check-input" type="checkbox" id="condiciones" required>
+                      <label class="form-check-label" for="condiciones">Acepto las condiciones de venta</label>
+                    </div>
+                    <div class="fw-bold text-end">Total: XX €</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detalles del método seleccionado -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <div class="card shadow-sm h-100 fonsGris border-0" id="detallesMetodo" onclick="setActiveStep(3)">
+                <div class="card-header d-flex align-items-center justify-content-evenly">
+                  <div class="step-number text-white" id="step3">3</div>
+                  <h5 class="mb-0 colorGris">Detalles del Pago</h5>
+                </div>
+                <div class="card-body">
+                  <!-- Tarjeta de crédito -->
+                  <div id="detallesTarjeta" class="collapse">
+                    <label for="numeroTarjeta" class="form-label">Número de Tarjeta:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                      <input type="text" id="numeroTarjeta" class="form-control" placeholder="XXXX XXXX XXXX XXXX"
+                        maxlength="16" required>
+                    </div>
+                    <label for="fechaCaducidad" class="form-label">Fecha de Caducidad:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                      <input type="month" id="fechaCaducidad" class="form-control" placeholder="MM/AA" required>
+                    </div>
+                    <label for="cvv" class="form-label">CVV:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                      <input type="text" id="cvv" class="form-control" placeholder="XXX" maxlength="3" required>
+                    </div>
+                    <button type="button" class="btn btn-danger w-100" title="Realizar pago">PAGAR</button>
+                  </div>
+
+                  <!-- PayPal -->
+                  <div id="detallesPayPal" class="collapse">
+                    <label for="paypalEmail" class="form-label">Correo Electrónico:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                      <input type="email" id="paypalEmail" class="form-control" placeholder="tuemail@ejemplo.com"
+                        maxlength="30" required>
+                    </div>
+                    <label for="paypalPassword" class="form-label">Contraseña:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                      <input type="password" id="paypalPassword" class="form-control" placeholder="••••••••"
+                        maxlength="50" required>
+                    </div>
+                    <button type="button" class="btn btn-danger w-100" title="Realizar pago">PAGAR</button>
+                  </div>
+
+                  <!-- Google Pay -->
+                  <div id="detallesGooglePay" class="collapse">
+                    <label for="googleEmail" class="form-label">Correo Electrónico:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                      <input type="email" id="googleEmail" class="form-control" placeholder="tuemail@ejemplo.com"
+                        maxlength="30" required>
+                    </div>
+                    <label for="googlePassword" class="form-label">Contraseña:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                      <input type="password" id="googlePassword" class="form-control" placeholder="••••••••"
+                        maxlength="50" required>
+                    </div>
+                    <button type="button" class="btn btn-danger w-100" title="Realizar pago">PAGAR</button>
+                  </div>
+
+                  <!-- Bizum -->
+                  <div id="detallesBizum" class="collapse">
+                    <label for="bizumTelefono" class="form-label">Número de Teléfono:</label>
+                    <div class="input-group mb-2">
+                      <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                      <input type="tel" id="bizumTelefono" class="form-control" placeholder="600 123 456" maxlength="9"
+                        required>
+                    </div>
+                    <button type="button" class="btn btn-danger w-100" title="Realizar pago">PAGAR</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="col-1"></div>
     </div>
-</main>
+  </main>
 {% endblock %}
