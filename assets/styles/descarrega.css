@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   --color-primary: #222831;
   --color-secondary: #30475e;
@@ -37,7 +35,7 @@ form input {
 }
 
 .card-header {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
   color: white !important;
   height: 70px;
 }
