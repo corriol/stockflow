@@ -11,9 +11,7 @@
   font-family: "Noto Serif", serif !important;
 }
 
-body {
-  padding-top: 8.3em
-}
+
 
 /* HEADER */
 nav {
@@ -50,7 +48,7 @@ p,
 .btn-accent-sf {
   color: white;
   background-color: var(--color-accent);
-  border: 1px solid black;
+  border: 1px solid var(--color-secondary);
 }
 
 .btn-accent-sf:hover {
@@ -78,3 +76,31 @@ footer {
   border: 1px solid var(--color-secondary) !important;
 }
 
+
+.btn-secondary-sf {
+  color: white !important;
+  background-color: var(--color-secondary) !important;
+  border: 1px solid var(--color-secondary);
+}
+
+.border-blue{
+  border:1px solid var(--color-secondary);
+}
+
+.links{
+  color: var(--color-secondary);
+}
+.links:hover{
+  color: var(--color-accent) !important;
+}
+
+
+.aceptar {
+  background-color: var(--color-secondary) !important;
+  border: 2px solid var(--color-secondary) !important;
+}
+
+.cancelar {
+  background-color: var(--color-accent) !important;
+  border: 2px solid var(--color-accent) !important;
+}

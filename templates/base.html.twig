@@ -10,13 +10,17 @@
     </title>
 
     <!-- Espai per a CSS específics de cada pàgina -->
-    {% block stylesheets %}    
+    {% block stylesheets %}   
+    <!-- CSS global -->
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}"> 
     {% endblock %}
 
     {% block javascripts %}
         {% block importmap %}{{ importmap() }}{% endblock %}
     {% endblock %}
 
+    <link rel="shortcut icon" href="{{ asset('images/base/favicon_4.ico') }}" type="image/x-icon">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +34,9 @@
     <header class="row bg-body-secondary pb-2 sticky-top mb-5">
             <div class="col-12 col-xl-3">
                 <div class="pt-2 ps-3 d-flex justify-content-xl-start justify-content-between align-items-center">
-                    <img src="{{ asset("images/base/logo_header.png") }}" id="logo_header" alt="" class="pt-1 pb-1">
+                    <a href="{{ url('app_index') }}">
+                        <img src="{{ asset("images/base/logo_header.png") }}" id="logo" alt="" class="pt-1 pb-1">
+                    </a>
                     <i class="bi bi-search fs-2 ps-3"></i>
                     <nav class="d-xl-none navbar pe-1">
                         <div class="container-fluid">
@@ -74,7 +80,7 @@
                                 <a class="nav-link text-blue px-2" href="{{ url('app_contacte') }}">CONTACTO</a>
                             </li>
                         </ul>
-                        <button class="btn-orange px-2 py-0 rounded-2 mt-2">DEMO</button>
+                        <button class="btn-accent-sf px-2 py-0 rounded-2 mt-2">DEMO</button>
                     </nav>
 
                 </div>
@@ -114,7 +120,7 @@
                         </div>
                         <div class="col-sm-6 col-xl-4">
                             <div class="text-center text-white d-flex flex-column gap-2 pt-3 gap-xl-5 pt-md-4 ">
-                                <h5 class="fs-6 fw-bold mt-2 mt-md-2">Legal</h5>
+                                <h5 class="fs-6 fw-bold mt-2 mt-md-2 text-white">Legal</h5>
                                 <div class="pt-4 mt-3 pt-xxl-0">
                                     <p class="mb-0"><a href="#"
                                             class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Aviso
@@ -138,7 +144,7 @@
                         <div class="col-md-12 col-xl-4 ps-0 ps-xl-5 pe-xl-4 pe-xxl-5 ps-xxl-0">
                             <form
                                 class="text-center text-white pt-2 pb-1 ps-2  ms-xl-1 ps-xxl-0 ms-xxl-4 pe-xxl-5 me-xxl-4">
-                                <h5 class="fs-6 fw-bold pt-0 pt-xl-1 mt-1">NEWSLETTERS</h5>
+                                <h5 class="fs-6 fw-bold pt-0 pt-xl-1 mt-1 text-white">NEWSLETTERS</h5>
                                 <div class="d-flex flex-column justify-content-between gap-2 ">
                                     <label for="nombre" class="text-white">* Nombre</label>
                                     <input type="text" class="form-control" id="nombre">
@@ -152,12 +158,12 @@
                                 <div
                                     class="d-flex flex-xl-column justify-content-center  flex-xxl-row pt-2 mt-2 justify-content-xxl-between pt-xxl-3 mt-xxl-1 ps-xxl-1">
                                     <input class="form-check-input me-2" type="checkbox" id="check">
-                                    <label for="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" id="check">Acepto los <a href="{{ url ('app_termes_condicions')}}" class="">términos y condiciones</a></label>
+                                    <label for="" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" id="check">Acepto los <a href="{{ url ('app_termes_condicions')}}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">términos y condiciones</a></label>
                                 </div>
 
                                 <div>
                                     <button type="button"
-                                        class="btn-orange mt-3 py-1 px-2 rounded-3 mb-2 mt-xl-3">Suscríbete</button>
+                                        class="btn-accent-sf mt-3 py-1 px-2 rounded-3 mb-2 mt-xl-3">Suscríbete</button>
                                 </div>
                             </form>
                         </div>
