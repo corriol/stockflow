@@ -9,13 +9,17 @@
 
 * {
   font-family: "Noto Serif", serif !important;
+  color: var(--color-secondary);
 }
 
+.fonsGris{
+    background-color: var(--color-background) !important;
+  }
 
 
 /* HEADER */
 nav {
-  background-color: var(--color-background);
+  background-color: var(--color-background) !important;
 }
 
 h1,
@@ -47,13 +51,13 @@ p,
 
 .btn-accent-sf {
   color: white;
-  background-color: var(--color-accent);
-  border: 1px solid var(--color-secondary);
+  background-color: var(--color-accent) !important;
+  border: 1px solid var(--color-secondary) !important;
 }
 
 .btn-accent-sf:hover {
   color: white;
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary) !important;
 }
 
 @media (max-width: 950px) {
@@ -63,7 +67,7 @@ p,
 }
 
 footer {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 #logo-footer {
@@ -84,11 +88,11 @@ footer {
 }
 
 .border-blue{
-  border:1px solid var(--color-secondary);
+  border:1px solid var(--color-secondary) !important;
 }
 
 .links{
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
 }
 .links:hover{
   color: var(--color-accent) !important;
