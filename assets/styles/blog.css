@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primary: #222831;
+  --color-secondary: #30475e;
+  --color-accent: #ff7000;
+  --color-background: #ececec;
+}
+
+.fonsGris{
+  background-color: var(--color-background);
+}
+
+
+* {
+  font-family: "Noto Serif", serif !important;
+  color: var(--color-secondary);
+}
+
+/* HEADER */
+nav {
+  background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.nav-link,
+.dropdown-item {
+  color: var(--color-secondary) !important;
+}
+
+#logo {
+  width: 10.4em;
+}
+
+.border-primary-sf {
+  border-color: var(--color-secondary) !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: white !important;
+  background-color: var(--color-secondary) !important;
+}
+
+.btn-accent-sf {
+  color: white;
+  background-color: var(--color-accent);
+  border: 1px solid black;
+}
+
+.btn-accent-sf:hover {
+  color: white;
+  background-color: var(--color-secondary);
+}
+
+.btn-secondary-sf {
+  color: white !important;
+  background-color: var(--color-secondary) !important;
+  border: 1px solid black;
+}
+
+.btn-secondary-sf:hover{
+  opacity: 0.7;
+}
+
+@media (max-width: 950px) {
+  #brand-wrapper {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: var(--color-primary);
+}
+
+#logo-footer {
+  width: 9.5em;
+}
+
+.btn-taronja {
+  color: white !important;
+  background-color: var(--color-accent) !important;
+  border: 1px solid var(--color-secondary) !important;
+}
+
+.btn-preu{
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.aceptar {
+  background-color: var(--color-secondary) !important;
+  border: 2px solid var(--color-secondary) !important;
+}
+
+.cancelar {
+  background-color: var(--color-accent) !important;
+  border: 2px solid var(--color-accent) !important;
+}
+
+.modal-title {
+  border: none !important;
+}
+
+.modal-footer {
+  border: none !important;
+}
+.modal-body {
+  border: none !important;
+}
+.modal-header {
+  border: none !important;
+}
+
+.border-blue{
+  border:1px solid var(--color-secondary);
+}
+
+/*** COSAS QUE HE AÑADIDO ***/
+
+.text-blauClar {
+  color: var(--color-secondary) !important;
+}
+
+.text-taronja {
+  color: var(--color-accent) !important;
+}
+
+.text-taronja:hover {
+  color: var(--color-secondary) !important;
+}
+
+.respuesta:hover p{
+  color: var(--color-accent) !important; 
+}
+.respuesta:hover i {
+  color: var(--color-accent) !important; 
+}
+
+.card {
+  cursor:pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 20em;
+}
+
+.fonsGris {
+  background-color: var(--color-background);
+}
+
+.user {
+  height: 6em;
+}

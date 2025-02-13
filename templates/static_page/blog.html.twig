@@ -1,0 +1,150 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+   <link rel="stylesheet" href="{{ asset('styles/blog.css') }}">
+{% endblock %}
+
+{% block title %}Blog {% endblock %}
+
+{% block main %}
+<div class="row container-fluid">
+<div class="col-lg-1"></div>
+<div class="col-lg-10">
+    <div class="container-fluid">
+        <!-- PRIMERA PARTE -->
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="fw-bolder pb-5">BLOG</h3>
+            </div>
+            </div>
+
+        <div class="row card-group gap-sm-4 pb-4">
+            <div class="card  col-md-6 rounded-4 px-0 shadow-lg" onclick="window.location.href='info_post.html'">
+                <img class="card-img-top rounded-4" src="./img/como_optimizar_espacio_almacen.webp" alt="Imagen optimización espacio del almacén">
+                <div class="card-body px-4 pt-4">
+                    <div class="card-title">
+                        <p class="fw-bolder fs-4">
+                            Estrategias para optimizar espacio
+                        </p>
+                    </div>
+                    <div class="card-subtitle">
+                        <p class="fw-lighter">
+                            26-11-2024
+                        </p>
+                    </div>
+                    <div class="card-subtitle d-flex">
+                        <i class="bi bi-tag-fill fs-5"></i>
+                        <p class="ps-2 m-0 fs-5">Organización</p>
+                    </div>
+                    <div class="card-text">
+                        <p class="pt-3 m-0">
+                            Implementar una estrategia para optimizar el espacio en un 
+                            almacén permite maximizar la capacidad de almacenamiento y mejorar 
+                            la eficiencia operativa. Algunas acciones clave incluyen el uso de 
+                            sistemas de almacenamiento vertical, la clasificación y agrupación de 
+                            productos por rotación o característica.
+                        </p>
+                    </div>
+                    <div class="card-link py-3">
+                        <a href="info_post.html" class="text-decoration-none text-taronja">Leer más ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card  col-md-6 rounded-4 px-0 shadow-lg mt-5 mt-sm-0" onclick="window.location.href='info_post.html'">
+                <img class="card-img-top rounded-4" src="./img/maxresdefault.jpg" alt="Sistema de Gestión de Almacenamiento">
+                <div class="card-body px-4 pt-4">
+                    <div class="card-title">
+                        <p class="fw-bolder fs-4">
+                            Implementar un sistema de gestión
+                        </p>
+                    </div>
+                    <div class="card-subtitle">
+                        <p class="fw-lighter">
+                        25-11-2024
+                        </p>
+                    </div>
+                    <div class="card-subtitle d-flex">
+                        <i class="bi bi-tag-fill fs-5"></i>
+                        <p class="ps-2 m-0 fs-5">Transformación</p>
+                    </div>
+                    <div class="card-text">
+                        <p class="pt-3 m-0">
+                        Descubre cómo implementar un sistema de gestión eficiente y adaptado a las necesidades de tu organización. 
+                        Exploraremos los pasos clave para planificar, diseñar y desplegar herramientas que optimicen procesos, mejoren 
+                        la productividad y faciliten la toma de decisiones. Este artículo incluye ejemplos prácticos, consejos útiles.
+                        </p>
+                    </div>
+                    <div class="card-link py-3">
+                        <a href="info_post.html" class="text-decoration-none text-taronja">Leer más ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SEGUNDA PARTE-->
+        <div class="row card-group gap-sm-4 pt-5 pb-4">
+            <div class="card  col-md-6 rounded-4 px-0 shadow-lg" onclick="window.location.href='info_post.html'">
+                <img class="card-img-top rounded-4" src="./img/Logistiko-Blog-Banner-1024x576.png" alt="Optimización espacio del almacén">
+                <div class="card-body px-4 pt-4">
+                    <div class="card-title">
+                        <p class="fw-bolder fs-4">
+                            Ventajas de la importa digitalización
+                        </p>
+                    </div>
+                    <div class="card-subtitle">
+                        <p class="fw-lighter">
+                            24-11-2024
+                        </p>
+                    </div>
+                    <div class="card-subtitle d-flex">
+                        <i class="bi bi-tag-fill fs-5"></i>
+                        <p class="ps-2 m-0 fs-5">Beneficios</p>
+                    </div>
+                    <div class="card-text">
+                        <p class="pt-3 m-0">
+                        La digitalización está revolucionando la forma en que operan las empresas y gestionamos nuestras 
+                        actividades diarias. En este artículo, exploramos las principales ventajas que ofrece, desde la 
+                        optimización de procesos y la reducción de costos hasta el acceso a datos en tiempo real y la mejora
+                        de la experiencia del cliente.
+                        </p>
+                    </div>
+                    <div class="card-link py-3">
+                        <a href="info_post.html" class="text-decoration-none text-taronja">Leer más ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card  col-md-6 rounded-4 px-0 shadow-lg mt-5 mt-sm-0" onclick="window.location.href='info_post.html'">
+            <img class="card-img-top rounded-4" src="./img/images.jpg" alt="Errores comunes en la gestión">
+            <div class="card-body px-4 pt-4">
+                <div class="card-title">
+                    <p class="fw-bolder fs-4">
+                        Errores comunes en la gestión
+                    </p>
+                </div>
+                <div class="card-subtitle">
+                    <p class="fw-lighter">
+                        23-11-2024
+                    </p>
+                </div>
+                <div class="card-subtitle d-flex">
+                    <i class="bi bi-tag-fill fs-5"></i>
+                    <p class="ps-2 m-0 fs-5">Errores</p>
+                </div>
+                <div class="card-text">
+                    <p class="pt-3 m-0">
+                        La gestión efectiva es clave para el éxito de cualquier proyecto u organización, pero es fácil cometer 
+                        errores que afectan los resultados. En este artículo, analizamos los errores más comunes en la gestión, 
+                        como la falta de planificación, una comunicación ineficaz y la resistencia al cambio. 
+                    </p>
+                </div>
+                <div class="card-link py-3">
+                    <a href="info_post.html" class="text-decoration-none text-taronja">Leer más ></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+<div class="col-lg-1"></div>
+</div>
+{% endblock %}
