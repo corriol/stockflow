@@ -83,4 +83,21 @@ class StaticPageController extends AbstractController
     {
         return $this->render('static_page/terminos-condiciones.html.twig');
     }
+
+    #[Route('/blog2', name: 'app_blog')]
+    public function blog(): Response
+    {
+        return $this->render('static_page/blog.html.twig', [
+            
+        ]);
+    }
+
+    #[Route('/info_post', name: 'app_info_post')]
+    public function info_post(): Response
+    {
+        return $this->render('static_page/info_post.html.twig', [
+            
+        ]);
+    }
+
 }
