@@ -4,200 +4,244 @@
 
 {% block main %}
 	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-10">
-			<p>Software de Gestión de Almacenes</p>
-			<p>(SGA / WMS)</p>
-			<p>
-				Nuestra aplicación está diseñada para simplificar la recepción, 
-				                almacenamiento y envío de productos, eliminando el caos y 
-				                permitiendo un control total de tu inventario desde cualquier lugar. 
-				                Aumenta la productividad de tu equipo con una solución moderna, 
-				                intuitiva y accesible desde cualquier dispositivo.
-			</p>
-			<button>Solicitar DEMO</button>
-			<a href="../preu_plans/preu_plans.html">
-				<button>Precios y planes<span>></span>
-				</button>
-			</a>
-			<img class="img-fluid" src="{{ asset("images/index/1_inicio.png") }}" alt="">
-		</div>
-		<div class="col-1"></div>
-	</div>
+      <div class="col-lg-1"></div>
+      <div class="col-md-6 col-lg-5 pe-md-0 pe-4 pt-5 ps-4">
+        <div class="fonsGris rounded-start-3 rounded-left-3 pt-sm-4 pt-md-2 pt-sm-0 ps-2 pt-xxl-3">
+          <h1 class="colorTitol fw-bold ps-3 pt-4 pt-sm-1 pt-md-4 pt-xl-3 pt-xxl-4 pe-5 pe-xxl-0">Software de Gestión de
+            Almacenes</h1>
+          <h3 class="colorTitol fw-bold ps-3 pb-xxl-3">(SGA / WMS)</h3>
+          <p class="colorTitol pe-4 ps-3 lh-lg pt-xl-1 pt-xxl-3 pe-xxl-4">
+            Nuestra aplicación está diseñada para simplificar la recepción, almacenamiento y envío de
+            productos, eliminando el caos y permitiendo un control total de tu inventario desde cualquier
+            lugar. Aumenta la productividad de tu equipo con una solución moderna, intuitiva y accesible
+            desde cualquier dispositivo.
+          </p>
+          <div class="d-lg-flex justify-content-center gap-lg-3 gap-2 pt-xxl-4  pb-4 pb-xxl-5 px-md-4 d-grid">
+            <button type="button" class="btn btn-accent-sf text-light border border-black px-4 px-xxl-5" aria-label="Solicitar una demostración">
+              <a class="text-light text-decoration-none" href="descripcio_producte/descripcio_producte.html">Solicitar DEMO</a></button>
+            <button type="button" class="btn btn-secondary-sf text-light px-4 px-xxl-5" aria-label="Ver planes y precios">
+              <a class="text-light text-decoration-none" href="preus_plans/preus_plans.html">Precios y planes ></a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5 pt-md-5 pt-4 ps-4 ps-md-0 pe-4">
+        <div class="fonsGris h-100 d-flex align-items-center rounded-end-3 rounded-right-3">
+          <img class="w-100" src="{{ asset("images/index/1_inicio.png") }}" alt="foto_Empleado_En_Almacen">
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-xl-1"></div>
+      <div class="col-xl-10 pt-5  pe-sm-2">
+        <div class="container-fluid">
+          <div class="row gy-4 gx-sm-3">
+            <div class="col-xl-3 col-sm-6 pe-sm-3">
+              <div class="text-center card border-0 fonsGris rounded-4 pt-3 h-100">
+                <h6 class="fw-bold mb-0 px-sm-4 px-lg-2 pt-lg-1 colorTitol">GESTIÓN INTERGRAL DE
+                  INVENTARIOS</h6>
+                <p class="mb-0">------------------------------------</p>
+                <p class="pt-1 pt-xxl-2 px-md-3 px-3 lh-sm">Controla cada detalle de tus productos: desde la
+                  recepción hasta el envío, con un seguimiento en tiempo real y alertas de stock bajo.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 ps-sm-2 pe-sm-3">
+              <div class="text-center card border-0 fonsGris rounded-4 pt-3 h-100">
+                <h6 class="fw-bold mb-0 px-3 pt-lg-1 colorTitol">INTERFAZ ADAPTABLE Y FÁCIL DE USAR</h6>
+                <p class="mb-0">------------------------------------</p>
+                <p class="pt-1 pt-xxl-2 px-3 lh-sm">Accede a toda la información que necesitas con una interfaz
+                  moderna, intuitiva y optimizada para dispositivos móviles y laptops.</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 ps-lg-2 pe-sm-3">
+              <div class="text-center card border-0 fonsGris rounded-4 pt-3 h-100">
+                <h6 class="fw-bold mb-0 pt-1 pt-sm-0 pt-xl-1 px-4 colorTitol">AUTOMATIZACIÓN DE PROCESOS</h6>
+                <p class="mb-0">------------------------------------</p>
+                <p class="pt-2 pt-xl-1 pt-xxl-2 px-3 px-lg-3 lh-sm">Simplifica las tareas diarias con flujos de trabajo
+                  automatizados que reducen el tiempo de administración y minimizan errores humanos.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 ps-sm-2 pe-sm-3">
+              <div class="text-center card border-0 fonsGris rounded-4 pt-3 h-100">
+                <h6 class="fw-bold mb-0 px-3 colorTitol pt-xl-1">ANÁLISIS Y REPORTES AVANZADOS</h6>
+                <p class="mb-0">------------------------------------</p>
+                <p class="pt-2 pt-xl-1 pt-xxl-2  px-sm-3 px-2 lh-sm">Obtén informes detallados sobre la rotación de
+                  productos, el rendimiento del almacén y el cumplimiento de pedidos, facilitando la
+                  toma de decisiones estratégicas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-1"></div>
+    </div>
 
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-10">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-3">
-						<p>GESTIÓN INTEGRAL DE INVENTARIOS</p>
-						<p>--------------------------------</p>
-						<p>
-							Controla cada detalle de tus productos: desde la recepción 
-							                            hasta el envío, con un seguimiento en tiempo real y alertas 
-							                            de stock bajo.
-						</p>
-					</div>
-					<div class="col-3">
-						<p>INTERFAZ ADAPTABLE Y FÁCIL DE USAR</p>
-						<p>--------------------------------</p>
-						<p>
-							Accede a toda la información que necesitas con una interfaz 
-							                            moderna, intuitiva y optimizada para dispositivos móviles y 
-							                            laptops.
-						</p>
-					</div>
-					<div class="col-3">
-						<p>AUTOMATIZACIÓN DE PROCESOS</p>
-						<p>--------------------------------</p>
-						<p>
-							Simplifica las tareas diarias con flujos de trabajo 
-							                            automatizados que reducen el tiempo de administración y 
-							                            minimizan errores humanos.
-						</p>
-					</div>
-					<div class="col-3">
-						<p>ANÁLISIS Y REPORTES AVANZADOS</p>
-						<p>--------------------------------</p>
-						<p>
-							Obtén informes detallados sobre la rotación de productos, 
-							                            el rendimiento del almacén y el cumplimiento de pedidos, 
-							                            facilitando la toma de decisiones estratégicas.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-1"></div>
-	</div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center pt-5">
+          <h3 class="fw-bold pb-4">BENEFICIOS PARA TU EMPRESA</h3>
+        </div>
+      </div>
+    </div>
 
-	<div class="row">
-		<div class="col-12">
-			<p>Beneficios para tu empresa</p>
-		</div>
-	</div>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 pe-4 pe-xl-3 pe-xxl-2 ps-4 ps-xl-4 pt-sm-2 pt-md-0 pt-xl-2 pt-xxl-1 ">
+        <div class="pt-3 d-md-none d-lg-flex">
+          <img class="w-100" src="{{ asset("images/index/2_beneficios.png") }}" alt="Foto_Beneficios_Empresa">
+        </div>
+      </div>
+      <div class="col-lg-5 ps-4 ps-lg-2 ps-xxl-3 pe-4 pt-4">
+        <div class="fonsGris rounded-4 pt-1 pt-md-2 pt-lg-1 px-3 h-100">
+          <ul class="pt-xxl-4 pt-sm-2 pt-3">
+            <li class="fw-bold">Ahorro de Tiempo y Costos
+              <p class="fw-light pt-1 pt-xl-2 mb-2">Al automatizar tareas y centralizar la gestión, se
+                reducen tiempos de búsqueda de productos y se minimizan los errores costosos.</p>
+            </li>
+            <li class="fw-bold pt-1">Mejora en la Productividad
+              <p class="fw-light pt-1">Los operarios y encargados trabajan de manera más organizada,
+                optimizando rutas de picking y reduciendo tiempos de preparación de pedidos.</p>
+            </li>
+            <li class="fw-bold">Mayor Control y Visibilidad
+              <p class="fw-light pt-1">Monitorea el estado de tu inventario en tiempo real y realiza un
+                seguimiento preciso de todos los movimientos dentro del almacén.</p>
+            </li>
+            <li class="fw-bold">Escalabilidad y Adaptación
+              <p class="fw-light pt-1">Crece con tu negocio: el sistema se adapta fácilmente a nuevas
+                ubicaciones y almacenes, manteniendo siempre el control centralizado.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
 
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-5">
-            <div><img class="img-fluid" src="{{ asset("images/index/2_beneficios.png") }}"  alt="">          			</div>
-		</div>
-		<div class="col-5">
-			<ul>
-				<li>Ahorro de Tiempo y Costos
-					<p>
-						Al automatizar tareas y centralizar la gestión, 
-						                        se reducen tiempos de búsqueda de productos y se 
-						                        minimizan los errores costosos.
-					</p>
-				</li>
-				<li>Mejora en la Productividad
-					<p>
-						Los operarios y encargados trabajan de manera más 
-						                        organizada, optimizando rutas de picking y reduciendo 
-						                        tiempos de preparación de pedidos.
-					</p>
-				</li>
-				<li>Mayor Control y Visibilidad
-					<p>
-						Monitorea el estado de tu inventario en tiempo real y 
-						                        realiza un seguimiento preciso de todos los movimientos 
-						                        dentro del almacén.
-					</p>
-				</li>
-				<li>Escalabilidad y Adaptación
-					<p>
-						Crece con tu negocio: el sistema se adapta fácilmente a 
-						                        nuevas ubicaciones y almacenes, manteniendo siempre el 
-						                        control centralizado.
-					</p>
-				</li>
-			</ul>
-		</div>
-		<div class="col-1"></div>
-	</div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center pt-4">
+          <h3 class="fw-bold py-4">CASOS DE ÉXITO DE NUESTROS CLIENTES</h3>
+        </div>
+      </div>
+    </div>
 
-	<div class="row">
-		<div class="col-12">
-			<p>Casos de éxito de nuestros clientes</p>
-		</div>
-	</div>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 col-sm-6">
+        <div class="pt-4">
+          <img class="w-100" src="{{ asset("images/index/3_caso_de_exito.png") }}" alt="Foto_Caso_De_Exitos_1">
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-6">
+        <div class="pt-4">
+          <img class="w-100" src="{{ asset("images/index/4_caso_de_exito.png") }}" alt="Foto_Caso_De_Exitos_2">
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
 
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-5">
-			<img class="img-fluid" src="{{ asset("images/index/3_caso_de_exito.png") }}" alt="">
-		</div>
-		<div class="col-5">
-			<img class="img-fluid" src="{{ asset("images/index/4_caso_de_exito.png") }}" alt="">
-		</div>
-		<div class="col-1"></div>
-	</div>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 col-sm-6">
+        <div class="">
+          <img class="w-100 py-4" src="{{ asset("images/index/5_caso_de_exito.png") }}" alt="Foto_Caso_De_Exitos_3">
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-6 py-sm-4 pb-4">
+        <div class="">
+          <img class="w-100" src="{{ asset("images/index/6_casoDeExito.png") }}" alt="Foto_Caso_De_Exitos_4">
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
 
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-5">
-			<img class="img-fluid" src="{{ asset("images/index/5_caso_de_exito.png") }}" alt="">
-		</div>
-		<div class="col-5">
-			<img class="img-fluid" src="{{ asset("images/index/6_caso_de_exito.png") }}" alt="">
-		</div>
-		<div class="col-1"></div>
-	</div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center pt-0 pt-sm-2 pt-md-1">
+          <h3 class="fw-bold pt-3">RESEÑAS</h3>
+        </div>
+      </div>
+    </div>
 
-	<div class="row">
-		<div class="col-12">
-			<p>RESEÑAS</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-10">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-3">
-						<img class="img-fluid" src="{{ asset("images/index/7_reseña.png") }}" alt="">
-						<p>
-							"Este software ha revolucionado nuestra manera de trabajar 
-							                            en el almacén. Antes era un caos encontrar productos, pero 
-							                            ahora todo está organizado y accesible desde cualquier 
-							                            dispositivo."
-						</p>
-						<p>- Carlos M., Gerente de Logística.</p>
-					</div>
-					<div class="col-3">
-						<img class="img-fluid" src="{{ asset("images/index/8_reseña.png") }}" alt="">
-						<p>
-							"Nos encanta la facilidad de uso y cómo ha mejorado 
-							                            la productividad del equipo. Ahora completamos las 
-							                            órdenes de envío en la mitad del tiempo."
-						</p>
-						<p>- Marta G., Supervisora de Almacén.</p>
-					</div>
-					<div class="col-3">
-						<img class="img-fluid" src="{{ asset("images/index/9_reseña.png") }}" alt="">
-						<p>
-							"La automatización de procesos nos ha permitido reducir 
-							                            los errores en un 90%. No puedo imaginar volver a trabajar 
-							                            sin esta herramienta."
-						</p>
-						<p>- Carlos M., Gerente de Logística.</p>
-					</div>
-					<div class="col-3">
-						<img class="img-fluid" src="{{ asset("images/index/10_reseña.png") }}" alt="">
-						<p>
-							"El sistema de reportes es increíble. Nos da toda la 
-							                            información que necesitamos para tomar decisiones más 
-							                            rápidas y acertadas sobre nuestro stock."
-						</p>
-						<p>- Ana S., Responsable de Inventario.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-1"></div>
-	</div>
+    <div class="row">
+      <div class="col-xl-1"></div>
+      <div class="col-xl-10 pt-5 pe-0 pe-sm-2">
+        <div class="container-fluid">
+          <div class="row gy-4 gx-sm-3">
+            <div class="col-md-3 col-sm-6 ps-0 pe-sm-3 ps-md-0 pe-md-4">
+              <div class="text-center card fonsGris rounded-3 h-100">
+                <img class="pb-md-3" src="{{ asset("images/index/7_reseña.png") }}" alt="Foto_Reseñas_Uno">
+                <p
+                  class="justify-content-md-center justify-content-evenly d-flex gap-md-3 gap-xxl-4 pt-3 pt-md-1 pt-xl-0 ps-sm-0 pb-2 pb-md-0 mb-0">
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                </p>
+                <p class="text-start fw-bold px-3 px-sm-2 px-md-3 pe-xxl-2 pt-2 pt-md-3">"Este software
+                  ha revolucionado nuestra manera de trabajar en el almacén. Antes era un caos
+                  encontrar productos, pero ahora todo está organizado y accesible desde cualquier
+                  dispositivo."</p>
+                <p class="text-start px-3 fst-italic pb-3">- Carlos M., Gerente de Logística.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ps-0 ps-sm-2 pe-sm-0 ps-md-0 pe-md-3">
+              <div class="text-center card fonsGris rounded-3 h-100">
+                <img class="pb-2" src="{{ asset("images/index/8_reseña.png") }}" alt="Foto_Reseñas_Uno">
+                <p
+                  class="justify-content-md-center justify-content-evenly d-flex gap-md-3 gap-xxl-4 pt-md-1 pt-lg-0  pb-1 pb-2 pb-xxl-2 pb-md-0 mb-0">
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star"></span>
+                </p>
+                <p class="text-start px-3 fw-bold pe-xxl-4 pt-2 pt-md-3 pt-xxl-2">"Nos encanta la
+                  facilidad de uso y cómo ha mejorado la productividad del equipo. Ahora completamos
+                  las órdenes de envío en la mitad del tiempo."</p>
+                <p class="text-start px-3 fst-italic pb-3">- Marta G., Supervisora de Almacén.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ps-0 ps-md-2 pe-3 pe-md-2">
+              <div class="text-center card fonsGris rounded-3 h-100">
+                <img class="pb-2" src="{{ asset("images/index/9_reseña.png") }}" alt="Foto_Reseñas_Uno">
+                <p
+                  class="justify-content-md-center justify-content-evenly d-flex gap-3 gap-xxl-4 pt-1 pt-sm-2 pt-md-1 pt-xl-1 pb-sm-3 pb-md-0 pb-1 mb-0">
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star"></span>
+                </p>
+                <p class="text-start px-3 px-sm-2 px-md-3 fw-bold pt-2 pt-sm-0 pt-md-3">"La
+                  automatización de procesos nos ha permitido reducir los errores en un 90%. No puedo
+                  imaginar volver a trabajar sin esta herramienta."</p>
+                <p class="text-start px-3 fst-italic pb-3">- Juan M., Adjunto logística.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ps-0 ps-sm-3  pe-sm-0">
+              <div class="text-center card fonsGris rounded-3 h-100">
+                <img class="pb-sm-3 pb-md-2" src="{{ asset("images/index/10_reseña.png") }}" alt="Foto_Reseñas_Uno">
+                <p
+                  class="justify-content-md-center justify-content-evenly d-flex gap-3 gap-xxl-4 pt-2 pt-sm-0 pt-md-1 pb-2 pb-sm-1 mb-0">
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                  <span class=" bi bi-star-fill"></span>
+                </p>
+                <p class="text-start px-3 fw-bold pt-2">"El sistema de reportes es increíble. Nos da
+                  toda la información que necesitamos para tomar decisiones más rápidas y acertadas
+                  sobre nuestro stock."</p>
+                <p class="text-start px-3 fst-italic pb-3">- Ana S., Responsable de Inventario.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-1"></div>
+    </div>
 
 {% endblock %}
