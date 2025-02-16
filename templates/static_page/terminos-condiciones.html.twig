@@ -1,153 +1,123 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'base.html.twig' %}
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-366D0XWC0C"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+{% block title %}Stockflow{% endblock %}
 
-      gtag('config', 'G-366D0XWC0C');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../common/css/normalize.css"> 
-    <link rel="stylesheet" href="../common/css/common.css"> 
-    <link rel="stylesheet" href="preus_plans.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="../img/favicon_4.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <script src="../js/script.js" defer></script>
-	<link rel="stylesheet" type="text/css" href="terminos_condiciones.css">
-    <title>Términos y Condiciones</title>
-</head>
+{% block main %}
 
-<body>
-    <header>
-        <div class="menu-container">
-            <div class="logo-header">
-                <a href="index.html"><img src="../img/logo_header.png" alt=""></a>
-            </div>
-            <div class="busqueda">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="contenedorMenu">
-                <div class="primerMenu">
-                    <ul class="primeraLista">
-                        <li class="dropdown">
-                            PRODUCTO <span>^</span>
-                            <ul class="dropdown-menu">
-                                <a href="../descarrega/descarrega.html"><li>DESCARGA DE PRODUCTO</li></a>
-                                <a href="../preu_plans/preu_plans.html"><li>PLANES Y PRECIOS</li></a>
-                            </ul>
-                        </li>
-                        <a href="../casosExito/casosExito.html"><li>CASOS DE ÉXITO</li></a>
-                        <a href="../resenas/resenas.html"><li>RESEÑAS</li></a>
-                    </ul>
-                </div>
-
-                <div class="segonMenu">
-                    <ul class="segonaLista">
-                        <a href="../qui_som/qui_som.html"><li>QUIÉNES SOMOS</li></a>
-                        <a href="../blog/blog.html"><li>BLOG</li></a>
-                        <a href="../contactar/contactar.html"><li>CONTACTO</li></a>
-                    </ul>
-                    <div class="demoContainer">
-                        <a href="../descripcioProducte/descripcioproducte.html"><button id="demo">DEMO</button></a>
-                    </div>
-                </div>
-                <div class="hamburguesa-container">
-                    <i id="menuHamburguesa" class="fa-solid fa-bars"></i>
-                </div>
-            </div>
+    <div class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Política de Cookies</h5>
         </div>
-    </header>
-
-    <main>
-        <div class="titulTerminos">
-            <p>TÉRMINOS Y CONDICIONES</p>
+        <div class="modal-body">
+          <p class="my-1">
+            Este sitio web usa cookies para mejorar tu experiencia, analizar
+            el tráfico y personalizar contenido.
+          </p>
+          <p class="my-1">
+            Al navegar, aceptas su uso según nuestra Política de Cookies.
+          </p>
+          <p class="my-1">
+            Puedes gestionarlas en la configuración de tu navegador.
+          </p>
+          <p class="my-1">
+            Más información en nuestra Política de Privacidad.
+          </p>
         </div>
-
-        <div class="contingut">
-            <p>Estos son los términos y condiciones para el uso de nuestros servicios. Al utilizar nuestro servicio, aceptas los siguientes términos:</p>
-            <h3>1. Aceptación de los términos</h3>
-            <p>Al acceder y usar este sitio web, aceptas cumplir con estos términos y condiciones. Si no estás de acuerdo con estos términos, no debes usar nuestros servicios.</p>
-
-            <h3>2. Uso del servicio</h3>
-            <p>El uso de nuestros servicios está reservado para usuarios mayores de 18 años. Nos reservamos el derecho de cambiar, modificar o suspender nuestros servicios en cualquier momento.</p>
-
-            <h3>3. Derechos de propiedad intelectual</h3>
-            <p>Todo el contenido de este sitio, incluidos textos, imágenes, logotipos y gráficos, son propiedad de nuestra empresa y están protegidos por leyes de propiedad intelectual. No puedes utilizar este contenido sin nuestro consentimiento explícito.</p>
-
-            <h3>4. Política de privacidad</h3>
-            <p>Tu privacidad es importante para nosotros. Recopilamos y utilizamos tu información personal de acuerdo con nuestra política de privacidad, que puedes leer aquí.</p>
-
-            <h3>5. Limitación de responsabilidad</h3>
-            <p>No nos hacemos responsables de ningún daño directo, indirecto o incidental que pueda surgir del uso de nuestros servicios. Usas nuestros servicios bajo tu propio riesgo.</p>
-
-            <h3>6. Modificaciones de los términos</h3>
-            <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones se publicarán en este sitio y entrarán en vigencia de inmediato.</p>
-
-            <h3>7. Ley aplicable</h3>
-            <p>Estos términos y condiciones se rigen por las leyes de España. Cualquier disputa relacionada con estos términos estará sujeta a la jurisdicción de los tribunales competentes de Pego.</p>
+        <div class="modal-footer">
+          <button class="btn btn-accent-sf" type="button" title="Aceptar la política de cookies" data-bs-dismiss="modal">
+            Aceptar
+          </button>
+          <button class="btn btn-secondary-sf" type="button" title="Rechazar la política de cookies" data-bs-dismiss="modal">
+            Rechazar
+          </button>
         </div>
-    </main>
-
-    <footer id="fonsFooter">
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="stockFlow-container">
-                    <div class="img-container">
-                        <img id="logoFooter" src="../img/logo_footer.png" alt="">
-                    </div>
-                    <div class="stockFlow-text-container">
-                        <p>
-                           <a href="https://www.google.es/maps/place/Carrer+Duanes,+17,+03780+Pego,+Alacant/@38.8449193,-0.1151114,17z/data=!3m1!4b1!4m6!3m5!1s0xd61e51e2474a3f3:0x2bb2163fd7fdd695!8m2!3d38.8449152!4d-0.1125365!16s%2Fg%2F11cp7md4cb?hl=es&entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D"> <i id="iconoUbicacion" class="fa-solid fa-location-dot"></i></a>
-                            <span id="ubicacion">C/Duanes, 17 - Pego </span>
-                        </p>
-                        <p>
-                            <a href="../contactar/contactar.html"><i id="iconoTelefono" class="fa-solid fa-phone"></i></a>
-                            <span id="telefono">+34 966 409 960 </span>
-                        </p>
-                        <p>
-                            <a href="../contactar/contactar.html"> <i id="iconoCorreo" class="fa-solid fa-envelope"></i></a>
-                            <span id="correo">03007613@edu.gva.es</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="legalidad-container">
-                    <div class="legalidad-contenido">
-                        <p id="tituloLegalidad">Legal</p>
-                        <div class="avisoLegalidad">
-                            <p><a href="../faqs/faqs.html">FAQs</a></p>
-                            <p><a href="../avisoLegal/avisoLegal.html">Aviso legal</a></p>
-                            <p><a href="../politicaCookies/politicaCookies.html">Política de cookies</a></p>
-                            <p><a href="../politicaPrivacidad/politicaPrivacidad.html">Política de privacidad</a></p>
-                        </div>
-
-                        <div class="redesSociales-container">
-                           <a href="https://x.com/?lang=es"><i class="fa-brands fa-twitter"></i></a> 
-                           <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin"></i></a> 
-                           <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div id="copyrightFondo">
-        <div class="copyright">
-            <p id="textoCopyright">© Copyright 2024. Todos los derechos reservados</p>
-        </div>
+      </div>
     </div>
-</body>
-</html>
+  </div>
 
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        
+        <div class="modal-header text-white border-0">
+          <h5 class="modal-title colorsitio" id="searchModalLabel">Buscar en el sitio</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+    
+        <div class="modal-body p-4">
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control input-custom" placeholder="Buscar" aria-label="Buscar">
+  
+            <button class="btn botobusquedamodal" type="button">
+              <i class="bi bi-search lupa"></i>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-accent-sf btn-secondary btn-md" title="Cerrar búsqueda" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <main class="container" role="main">
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-12 text-center fw-bold fs-3 pt-5" role="heading" aria-level="1">
+                          <h1 class="mt-0 fs-3 fw-bold">TÉRMINOS Y CONDICIONES</h1>
+                      </div>
+                  </div>
+
+                  <div class="row" aria-labelledby="terms">
+                      <div class="col-12 contingut lh-md p-5 rounded-4" id="terms">
+                          <p>Estos son los términos y condiciones para
+                         el uso de nuestros servicios. Al utilizar nuestro servicio, aceptas los
+                           siguientes términos:</p>
+                          <h3 tabindex="0">1. Aceptación de los términos</h3>
+                          <p>Al acceder y usar este sitio web, aceptas
+                            cumplir con estos términos y condiciones. Si no estás de acuerdo con 
+                          estos términos, no debes usar nuestros servicios.</p>
+
+                          <h3 tabindex="0">2. Uso del servicio</h3>
+                          <p>El uso de nuestros servicios está 
+                   reservado para usuarios mayores de 18 años. Nos reservamos el derecho de
+                  cambiar, modificar o suspender nuestros servicios en cualquier momento.</p>
+
+                          <h3 tabindex="0">3. Derechos de propiedad intelectual</h3>
+                          <p>Todo el contenido de este sitio, 
+incluidos textos, imágenes, logotipos y gráficos, son propiedad de 
+nuestra empresa y están protegidos por leyes de propiedad intelectual. 
+No puedes utilizar este contenido sin nuestro consentimiento explícito.</p>
+
+                          <h3 tabindex="0">4. Política de privacidad</h3>
+                          <p>Tu privacidad es importante para 
+nosotros. Recopilamos y utilizamos tu información personal de acuerdo 
+con nuestra política de privacidad, que puedes leer aquí.</p>
+
+                          <h3 tabindex="0">5. Limitación de responsabilidad</h3>
+                          <p>No nos hacemos responsables de ningún 
+daño directo, indirecto o incidental que pueda surgir del uso de 
+nuestros servicios. Usas nuestros servicios bajo tu propio riesgo.</p>
+
+                          <h3 tabindex="0">6. Modificaciones de los términos</h3>
+                          <p>Nos reservamos el derecho de modificar 
+estos términos en cualquier momento. Las modificaciones se publicarán en
+este sitio y entrarán en vigencia de inmediato.</p>
+
+                          <h3 tabindex="0">7. Ley aplicable</h3>
+                          <p>Estos términos y condiciones se rigen por
+las leyes de España. Cualquier disputa relacionada con estos términos 
+estará sujeta a la jurisdicción de los tribunales competentes de Pego.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-1"></div>
+      </div>    
+</main>
+{% endblock %}

@@ -84,6 +84,7 @@ class StaticPageController extends AbstractController
         return $this->render('static_page/terminos-condiciones.html.twig');
     }
 
+
     #[Route('/blog2', name: 'app_blog')]
     public function blog(): Response
     {
@@ -99,5 +100,29 @@ class StaticPageController extends AbstractController
             
         ]);
     }
+
+
+    #[Route('/cookies', name: 'app_cookies')]
+    public function cookies(): Response
+    {
+        return $this->render('static_page/cookies.html.twig', [
+            'controller_name' => 'StaticPageController',
+        ]);
+    }
+
+    #[Route('/politica', name: 'app_politica')]
+    public function politica(): Response
+    {
+        return $this->render('static_page/politica.html.twig', [
+            'controller_name' => 'StaticPageController',
+        ]);
+    }
+
+    #[Route('/faqs', name: 'app_faqs')]
+    public function faqs(): Response
+    {
+        return $this->render('static_page/faqs.html.twig');
+    }
+
 
 }

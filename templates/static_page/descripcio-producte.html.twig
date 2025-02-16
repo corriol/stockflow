@@ -1,7 +1,139 @@
 {% extends 'base.html.twig' %}
 
+
 {% block title %}Stockflow{% endblock %}
 
 {% block main %}
-<h1>Descripción del producto</h1>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="container py-lg-5 py-md-5 py-sm-5 py-5">
+              <div class="row">
+                <div class="col-xl-6 pe-0 ps-md-0 ps-sm-0 ps-0 mb-md-5 mb-sm-5">
+                  <div class="ContainerImgDesc">
+                    <img
+                      src="{{ asset("/images/descripcio-productes/Producte.png") }}"
+                      class="imgMain w-100 rounded-start-4"
+                      alt="Imagen de una tablet en un almacen mostrando el contenido de la aplicación Stockflow"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6 ps-0 pe-md-0 pe-sm-0 pe-0">
+                  <div
+                    class="containerMain fondoGris text-center rounded-end-4 pt-5 pt-lg-4 pb-4 pb-lg-5"
+                  >
+                    <h3 class="fw-bold fs-3 mb-0 pt-lg-3">Descripción del producto</h3>
+                    <p class="textMain pt-4 pb-1 px-5 lh-lg">
+                      Con StockFlow, las empresas pueden gestionar, controlar y
+                      organizar su inventario de manera eficiente desde
+                      cualquier luegar, lo que permite una visibilidad completa
+                      y un control preciso sobre los productos almacenados. Esta
+                      app ofrece funciones clave como el seguimiento de entradas
+                      y salidas de productos, el control de stock en tiempo
+                      real, la asignación automática de ubicaciones dentro del
+                      almacén.
+                    </p>
+                    <div
+                      class="buttonsDesc d-flex flex-column align-items-center"
+                    >
+                      <a
+                        href="#seccioFuncions"
+                        class="btn btn-accent-sf px-5 w-75 mb-3"
+                        title="Baja al apartado funciones de la misma pagina "
+                        >Ver funcionalidad de producto</a
+                      >
+                      <a
+                        href="../descarrega/descarrega.html"
+                        target="_blank"
+                        class="btn btn-accent-sf px-5 w-75"
+                        title="Ir a descarga de producto"
+                        >Ver descarga de producto</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div id="seccioFuncions">
+                    <h2 class="text-center fw-bold m-0 pb-lg-5 pb-md-5 pb-sm-5 pb-5">
+                      Funciones StockFlow
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-6 pe-xl-0">
+                  <img src="{{ asset("/images/descripcio-productes/funciones1.2.webp") }}" class="d-lg-flex d-md-none d-sm-none d-none" alt="imagen de un hombre gestionando un inventario">
+                </div>
+                <div class="col-xl-6 ps-xl-0">
+                  <div class="bordeAzul text-center p-4">
+                    <h5 class="fw-bold m-0 pb-3">Gestión de Inventario en tiempo real</h5>
+                    <p class="m-0">
+                      El sistema permite un seguimiento detallado y preciso del inventario en tiempo real, brindando información actualizada sobre las
+                      cantidades disponibles de cada producto. Además, se puede visualizar el estado de los productos en tránsito, así como sus ubicaciones 
+                      exactas dentro del almacén, lo que facilita la toma de decisiones rápidas y precisas para mejorar la eficiencia operativa y reducir errores. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-5">
+                <div class="col-xl-6 pe-xl-0">
+                  <div class="bordeAzul text-center p-4">
+                    <h5 class="fw-bold m-0 pb-3">Control de Órdenes y Pedidos</h5>
+                    <p class="m-0">
+                      El sistema facilita la gestión integral de las órdenes de compra y los pedidos de los clientes, permitiendo un proceso de preparación y 
+                      envío mucho más ágil y eficiente.Con actualizaciones en tiempo real sobre el estado de cada pedido, los operadores pueden gestionar mejor 
+                      los tiempos de entrega, priorizar las órdenes urgentes y mantener informados a los clientes sobre el avance de sus solicitudes.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xl-6 ps-xl-0">
+                  <img src="{{ asset("/images/descripcio-productes/funciones2.jpg") }}" class="d-lg-flex d-md-none d-sm-none d-none" alt="imagen de una pareja de trabajadores controlando y gestionando ordenes y pedidos">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 pe-xl-0">
+                  <img src="{{ asset("/images/descripcio-productes/funciones3.webp") }}" class="d-lg-flex d-md-none d-sm-none d-none" alt="imagen de un hombre llevando paquetes a su ubicacion correcta en un almacén">
+                </div>
+                <div class="col-xl-6 ps-xl-0">
+                  <div class="bordeAzul text-center p-4">
+                    <h5 class="fw-bold m-0 pb-3">Optimización de la Ubicación de Productos</h5>
+                    <p class="m-0">
+                      La herramienta sugiere las ubicaciones más estratégicas para almacenar los productos, teniendo en cuenta los factores clave como la 
+                      frecuencia de rotación, el peso, y el tamaño de cada artículo. De esta manera, se maximiza el espacio disponible en el almacén, se 
+                      mejora la accesibilidad a los productos más demandados y se optimizan los tiempos de búsqueda, reduciendo significativamente el tiempo
+                      de manupilación y aumentando la productividad. 
+                    </p>
+                  </div>
+              </div>
+              <div class="row py-5 pe-sm-0 pe-0">
+                <div class="col-xl-6 pe-xl-0 pe-sm-0 pe-0">
+                  <div class="bordeAzul text-center p-4">
+                    <h5 class="fw-bold m-0 pb-3">Generación de Informes y Análisis</h5>
+                    <p class="m-0">
+                      La solución proporciona informes detallados y análisis exhaustivos sobre el rendimiento del almacén, incluyendo métricas clave como
+                      las tasas de rotación de inventarios, los pedidos pendientes, y los productos que necesitan ser restablecidos. Además, estos informes
+                      vienen acompañados de gráficos interactivos y datos fácilmente comprensibles que permiten a los gestores tomar decisiones basadas en
+                      hechos concretos para mejorar la operativa y la eficiencia del almacén.   
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xl-6 ps-xl-0 pe-xl-0">
+                  <img src="{{ asset("/images/descripcio-productes/funciones4.jpg") }}" class="d-lg-flex d-md-none d-sm-none d-none" alt="imagen de un ordenador mostrando analisis">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+      </div>
+    </main>
 {% endblock %}
