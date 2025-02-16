@@ -84,6 +84,15 @@ class StaticPageController extends AbstractController
         return $this->render('static_page/terminos-condiciones.html.twig');
     }
 
+
+    #[Route('/cookies', name: 'app_cookies')]
+    public function cookies(): Response
+    {
+        return $this->render('static_page/cookies.html.twig', [
+            'controller_name' => 'StaticPageController',
+        ]);
+    }
+
     #[Route('/politica', name: 'app_politica')]
     public function politica(): Response
     {
@@ -97,4 +106,5 @@ class StaticPageController extends AbstractController
     {
         return $this->render('static_page/faqs.html.twig');
     }
+
 }
