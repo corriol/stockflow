@@ -85,6 +85,23 @@ class StaticPageController extends AbstractController
     }
 
 
+    #[Route('/blog2', name: 'app_blog')]
+    public function blog(): Response
+    {
+        return $this->render('static_page/blog.html.twig', [
+            
+        ]);
+    }
+
+    #[Route('/info_post', name: 'app_info_post')]
+    public function info_post(): Response
+    {
+        return $this->render('static_page/info_post.html.twig', [
+            
+        ]);
+    }
+
+
     #[Route('/cookies', name: 'app_cookies')]
     public function cookies(): Response
     {
@@ -106,5 +123,6 @@ class StaticPageController extends AbstractController
     {
         return $this->render('static_page/faqs.html.twig');
     }
+
 
 }

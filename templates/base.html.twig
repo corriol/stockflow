@@ -9,10 +9,14 @@
         {% endblock %}
     </title>
 
-    <!-- Espai per a CSS específics de cada pàgina -->
-    {% block stylesheets %}   
     <!-- CSS global -->
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}"> 
+
+
+    <!-- Espai per a CSS específics de cada pàgina -->
+    {% block stylesheets %}   
+
+
     {% endblock %}
 
     {% block javascripts %}
@@ -74,7 +78,7 @@
                                 <a class="nav-link text-blue px-2" href="{{ url('app_qui_som') }}">QUIÉNES SOMOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-blue px-2" href="{{ url('app_blog_index') }}">BLOG</a>
+                                <a class="nav-link text-blue px-2" href="{{ url('app_blog') }}">BLOG</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-blue px-2" href="{{ url('app_contacte') }}">CONTACTO</a>

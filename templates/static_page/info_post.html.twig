@@ -1,0 +1,163 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+   <link rel="stylesheet" href="{{ asset('styles/blog.css') }}">
+{% endblock %}
+
+{% block title %}Blog {% endblock %}
+
+{% block main %}
+      <div class="row container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="container-fluid">
+            <div class="row">
+
+              <!-- PRIMERA PARTE-->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="text-center">
+                    <h3 class="fw-bolder pb-5">ESTRATÉGIAS PARA OPTIMIZAR ESPACIO</h3>
+                    <h4 class="fw-lighter">26-11-2024</h4>
+                    <img class="img-fluid w-100 pt-5" src="{{ asset("images/blog/como_optimizar_espacio_almacen.webp") }}" alt="Optimización espacio del almacén">
+                  </div>
+                  <div class="pt-5">
+                    <p class="fw-bolder fs-3 m-0">Estrategias para Optimizar Espacio</p>
+                    <p class="fw-bolder fs-3 m-0">Consejos para Maximizar Cada Centímetro</p>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fs-5">
+                      La optimización del espacio es una de las habilidades más útiles tanto en 
+                      la gestión de un hogar, como en la organización de un lugar de trabajo o 
+                      almacén. Ya sea que busques maximizar el uso de un pequeño apartamento o 
+                      mejorar la disposición de un almacén, hay varias estrategias y enfoques 
+                      que puedes aplicar para aprovechar al máximo cada rincón disponible. A 
+                      continuación, te presentamos algunas estrategias efectivas para optimizar 
+                      el espacio en diferentes entornos.
+                    </p>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fw-bolder fs-3">1. Utiliza Mobiliario Multifuncional</p>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fs-5">
+                      Una de las formas más efectivas de optimizar espacio es elegir muebles que cumplan 
+                      múltiples funciones. Los sofás con almacenamiento interno, las camas elevadas con 
+                      cajones debajo o las mesas que se convierten en escritorios son excelentes opciones. 
+                      Este tipo de mobiliario no solo ahorra espacio, sino que también permite tener una casa 
+                      más ordenada y funcional.
+                    </p>
+                    <p class="fw-bold fs-5">Ejemplo:</p>
+                    <li class="text-blauClar">
+                        Un sofá cama es ideal para un apartamento pequeño, ya que durante el día sirve como 
+                        lugar de descanso y por la noche se convierte en una cama adicional.
+                    </li>
+                  </div>
+
+                  <div class="pt-4">
+                    <p class="fw-bolder fs-3">2. Aprovecha las Paredes</p>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fs-5">
+                      Las paredes a menudo son áreas desaprovechadas. Colocar estanterías flotantes, ganchos o 
+                      incluso paneles de almacenamiento en las paredes permite liberar espacio en el suelo y 
+                      aprovechar áreas que normalmente no se considerarían para almacenamiento.
+                    </p>
+                    <p class="fw-bold fs-5">Ejemplo:</p>
+                    <li class="text-blauClar">
+                      En una cocina pequeña, puedes instalar estantes flotantes sobre la encimera para almacenar 
+                      utensilios o especias, liberando espacio en los armarios.
+                    </li>
+                  </div>
+
+                  <div class="pt-4">
+                    <p class="fw-bolder fs-3">3. Optimiza el Almacenaje Vertical</p>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fs-5">
+                      El almacenamiento vertical es otra clave para aprovechar al máximo el espacio disponible, 
+                      especialmente en habitaciones con techos altos. Instalar estanterías o armarios hasta el 
+                      techo no solo maximiza la capacidad de almacenamiento, sino que también contribuye a crear una 
+                      sensación de orden y amplitud.
+                    </p>
+                    <p class="fw-bold fs-5">Ejemplo:</p>
+                    <li class="text-blauClar">
+                      En un vestíbulo o pasillo, instalar estanterías altas puede ayudarte a almacenar libros o 
+                      elementos decorativos sin ocupar mucho espacio en el suelo.
+                    </li>
+                  </div>
+
+                  <div class="pt-4">
+                    <p class="fw-bolder fs-3">4. Uso de Almacenaje Oculto</p>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fs-5">
+                      Incorporar soluciones de almacenamiento oculto es una técnica excelente para mantener el espacio 
+                      ordenado y aprovechar al máximo cada rincón. Desde camas con cajones ocultos hasta muebles con 
+                      compartimentos secretos, estas soluciones permiten almacenar elementos fuera de la vista, reduciendo 
+                      el desorden visual.
+                    </p>
+                    <p class="fw-bold fs-5">Ejemplo:</p>
+                    <li class="text-blauClar">
+                      Las mesas de centro con almacenamiento interno o los bancos con compartimentos debajo pueden ser 
+                      útiles para guardar objetos que no se usan frecuentemente.
+                    </li>
+                  </div>
+                  <div class="pt-4">
+                    <p class="fw-bolder fs-3">Comentarios</p>
+                  </div>
+                  <div>
+                    <form>
+                      <textarea class="form-control" name="" id="" rows="4" placeholder="Añadir un comentario..."></textarea>
+                      <button type="submit" class="btn btn-accent-sf mt-2">Enviar</button>
+                    </form>
+                  </div>
+
+                  <div class="d-flex justify-content-center pt-5 w-75 mx-auto">
+                    <div class="d-flex align-items-center pe-4">
+                      <a href="">
+                        <i class="bi bi-arrow-left-short fs-3"></i>
+                      </a>
+                    </div>
+                    <div class="fonsGris rounded-4 px-3 py-2">
+                      <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img class="user" src="./img/usuario.webp" alt="Usuario Comentario">
+                        <div class="d-flex justify-content-center flex-column align-items-center pt-2">
+                          <h5 class="fw-bolder">Felipe Cornejo</h5>
+                          <p class="fw-lighter">2024-11-29</p>
+                        </div>
+                      </div>
+                      <div class="px-2">
+                        <p class="m-0">
+                          Aplicamos algunas de estas estrategias en nuestro almacén, ¡y el cambio ha 
+                          sido increíble! Ahora todo está mucho más organizado.
+                        </p>
+                        <a class="text-decoration-none respuesta" href="#">
+                          <p class="d-flex align-items-center pt-2">
+                            <i class="bi bi-envelope-arrow-down-fill fs-4 pe-3"></i>
+                            Responder
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="d-flex align-items-center ps-4">
+                      <a href="#">
+                        <i class="bi bi-arrow-right-short fs-3"></i>
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+{% endblock %}
