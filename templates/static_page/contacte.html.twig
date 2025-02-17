@@ -3,5 +3,99 @@
 {% block title %}Stockflow{% endblock %}
 
 {% block main %}
-<h1>Contacto</h1>
+<main class="container pt-0">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-12 col-md-10 mx-auto">
+        <div class="container-fluid">
+          <!-- Título -->
+          <div class="row mb-3 text-center" id="main-title">
+            <h1 class="fw-bold h3 pt-5">CONTACTO</h1>
+          </div>
+
+          <!-- Información de contacto -->
+          <div class="row mb-5" id="main-linkBox">
+            <div class="col-12 col-md-6 col-lg-3 text-center py-4">
+              <i class="bi bi-geo-alt"></i>
+              <p class="font-weight-bold">Dirección</p>
+              <p><a class="text-decoration-none text-reset links" href="https://maps.app.goo.gl/hcZNnDwhHCoCQf9XA"
+                  target="_blank">C/Duanes, 17 - Pego</a></p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center py-4">
+              <i class="bi bi-calendar"></i>
+              <p class="font-weight-bold">Horario</p>
+              <p>08:00 - 15:00</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center py-4">
+              <i class="bi bi-telephone"></i>
+              <p class="font-weight-bold">Teléfono</p>
+              <p>+34 966 409 960</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center py-4">
+              <i class="bi bi-envelope"></i>
+              <p class="font-weight-bold">Email</p>
+              <p>03007613@edu.gva.es</p>
+            </div>
+          </div>
+
+          <!-- Formulario de contacto -->
+          <div class="row">
+            <div class="col-12 col-xl-6 rounded-start-3" id="main-form">
+              <form class="p-4">
+                <div class="mb-3 row">
+                  <div class="col-12 col-xl-6">
+                    <label for="contacto-direccion" class="form-label">Nombre *</label>
+                    <input type="text" id="contacto-direccion" class="form-control"
+                      placeholder="Indica tu nombre" required>
+                  </div>
+                  <div class="col-12 col-xl-6">
+                    <label for="contacto-apellidos" class="form-label">Apellidos *</label>
+                    <input type="text" id="contacto-apellidos" class="form-control"
+                      placeholder="Indica tus apellidos" required>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <div class="col-12 col-xl-6">
+                    <label for="contacto-email" class="form-label">Email *</label>
+                    <input type="email" id="contacto-email" class="form-control"
+                      placeholder="example@mail.com" required>
+                  </div>
+                  <div class="col-12 col-xl-6">
+                    <label for="contacto-tlf" class="form-label">Teléfono</label>
+                    <input type="tel" id="contacto-tlf" class="form-control"
+                      placeholder="Indica un teléfono">
+                  </div>
+                </div>
+
+                <fieldset class="mb-2">
+                  <legend class="font-weight-bold">Mensaje</legend>
+                  <textarea id="contacto-msg" class="form-control rounded-3" rows="4"></textarea>
+                </fieldset>
+
+                <div class="mb-3 d-flex align-items-center gap-3">
+                  <input type="checkbox" class="form-check-input" id="contacto-protecDatos" required>
+                  <label class="form-check-label" for="contacto-protecDatos">Acepto <a class="text-reset links"
+                      href="../terminos_condiciones/terminos_condiciones.html">términos</a> y <a
+                      class="text-reset links"
+                      href="../terminos_condiciones/terminos_condiciones.html">condiciones</a></label>
+                </div>
+
+                <div>
+                  <button type="submit" class="btn btn-accent-sf">Enviar</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Imagen -->
+            <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center" id="main-img">
+              <img src="{{ asset("/images/contacte/contacto.jpg") }}" alt="Imagen de contacto" class="img-fluid rounded">
+          </div>          
+          </div>
+        </div>
+      </div>
+
+      <div class="col-1"></div>
+    </div>
+  </main>
+
 {% endblock %}
