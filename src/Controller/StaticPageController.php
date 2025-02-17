@@ -124,5 +124,10 @@ class StaticPageController extends AbstractController
         return $this->render('static_page/faqs.html.twig');
     }
 
+    #[Route('/avis-legal', name: 'app_avis_legal')]
+    public function avislegal(): Response
+    {
+        return $this->render('static_page/avis-legal.html.twig');
+    }
 
 }
