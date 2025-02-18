@@ -1,200 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block body_id 'blog_index' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/blog.css') }}">
+    {% endblock %}
 
-{% block main %}
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-10">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12">
-						<div>
-							<p>BLOG</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
+    {% block title %}
+        Blog
+    {% endblock %}
 
-						{% for post in paginator.results %}
-							<div class="col-6">
-								{{ include('blog/_post.html.twig') }}
-							</div>
-						{% else %}
-							<div class="jumbotron">{{ 'post.no_posts_found'|trans }}</div>
-						{% endfor %}
+    {% block main %}
+    
+    
+        <div class="row container-fluid">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="container-fluid">
+                    <!-- PRIMERA PARTE -->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h3 class="fw-bolder pb-5">
+                                BLOG
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        {% for post in paginator.results %}
+                            <div class="card col-md-6 rounded-4 px-0 shadow-lg mt-5 mt-sm-0" onclick="window.location.href='{{ path('app_info_post') }}'">
+                                {{ include('blog/_post.html.twig') }}
+                            </div>
+                        {% else %}
+                            <div class="jumbotron">
+                                {{ 'post.no_posts_found'|trans }}
+                            </div>
+                        {% endfor %}
 
-					
+                    </div>
 
-					<div class="col-6">
-						<div>
-							<div>
-								<div>
-									<p>Implementar un sistema de gestión</p>
-								</div>
-						</div>
-								<div>
-									<p>25-11-2024</p>
-								</div>
-								<div>
-									<i class="fa-solid fa-tag"></i>
-									<p>Transformación</p>
-								</div>
-								<div>
-									<p>
-										Descubre cómo implementar un sistema de gestión eficiente y adaptado a las necesidades de tu organización. 
-										                                    Exploraremos los pasos clave para planificar, diseñar y desplegar herramientas que optimicen procesos, mejoren 
-										                                    la productividad y faciliten la toma de decisiones. Este artículo incluye ejemplos prácticos, consejos útiles y 
-										                                    recursos para lograr una implementación exitosa. ¡Transforma tu gestión y lleva tu proyecto al siguiente nivel!
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href="infoPost.html">Leer más ></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-6">
-						<div>
-							<div>
-								<div>
-									<p>Ventajas de la digitalización</p>
-								</div>
-								<div>
-									<p>24-11-2024</p>
-								</div>
-								<div>
-									<i class="fa-solid fa-tag"></i>
-									<p>Transformación</p>
-								</div>
-								<div>
-									<p>
-										La digitalización está revolucionando la forma en que operan las empresas y gestionamos nuestras 
-										                                    actividades diarias. En este artículo, exploramos las principales ventajas que ofrece, desde la 
-										                                    optimización de procesos y la reducción de costos hasta el acceso a datos en tiempo real y la mejora
-										                                    de la experiencia del cliente. Descubre cómo la digitalización puede impulsar la innovación, aumentar
-										                                    la productividad y preparar a tu organización para los desafíos del futuro.
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href="infoPost.html">Leer más ></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-6">
-						<div>
-							<div>
-								<div>
-									<p>Errores comunes en la gestión de almacenes.</p>
-								</div>
-								<div>
-									<p>23-11-2024</p>
-								</div>
-								<div>
-									<i class="fa-solid fa-tag"></i>
-									<p>Transformación</p>
-								</div>
-								<div>
-									<p>
-										La gestión efectiva es clave para el éxito de cualquier proyecto u organización, pero es fácil cometer 
-										                                    errores que afectan los resultados. En este artículo, analizamos los errores más comunes en la gestión, 
-										                                    como la falta de planificación, una comunicación ineficaz y la resistencia al cambio. Aprende a identificarlos, 
-										                                    evitarlos y solucionarlos para mejorar tus habilidades de liderazgo y garantizar el éxito de tus iniciativas. 
-										                                    ¡Optimiza tu gestión y evita tropiezos innecesarios!
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href="infoPost.html">Leer más ></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-6">
-						<div>
-							<div>
-								<div>
-									<p>Los mejores dispositivos de inventario</p>
-								</div>
-								<div>
-									<p>23-11-2024</p>
-								</div>
-								<div>
-									<i class="fa-solid fa-tag"></i>
-									<p>Tecnología</p>
-								</div>
-								<div>
-									<p>
-										Seleccionar los dispositivos adecuados para la gestión de inventario puede marcar la 
-										                                    diferencia en la eficiencia y precisión de tu almacén. En este artículo, te presentamos 
-										                                    los mejores dispositivos del mercado, desde escáneres de códigos de barras y terminales portátiles 
-										                                    hasta impresoras de etiquetas y sistemas RFID. Analizamos sus características, ventajas y cómo pueden 
-										                                    integrarse en tus operaciones para optimizar procesos, reducir errores y aumentar la productividad. 
-										                                    ¡Descubre las herramientas que llevarán tu gestión de inventario al siguiente nivel!
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href="infoPost.html">Leer más ></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-6">
-						<div>
-							<div>
-								<div>
-									<p>Importancia del control en la gestión</p>
-								</div>
-								<div>
-									<p>21-11-2024</p>
-								</div>
-								<div>
-									<i class="fa-solid fa-tag"></i>
-									<p>Refrigeración</p>
-								</div>
-								<div>
-									<p>
-										El control es una función esencial para garantizar que las operaciones, proyectos y procesos se mantengan 
-										                                    alineados con los objetivos establecidos. En este artículo, destacamos la importancia del control en la gestión, 
-										                                    explicando cómo ayuda a detectar desviaciones, tomar decisiones informadas y mejorar la eficiencia. Descubre herramientas y 
-										                                    estrategias clave para implementar un sistema de control efectivo y asegurar el éxito en cualquier ámbito. ¡Mantén tus objetivos 
-										                                    bajo control y alcanza resultados excepcionales!
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href="infoPost.html">Leer más ></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-1"></div>
-	</div>
-
-{% endblock %}
-
-{% block sidebar %}
-	{{ parent() }}
-
-	{{ include('blog/_rss.html.twig') }}
-{% endblock %}
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        {% endblock %}
+        
