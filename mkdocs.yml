@@ -1,0 +1,10 @@
+site_name: Projecte DAW
+nav:
+  - Inici: index.md
+  - Arquitectura: arquitectura.md
+  - Instal·lació: instal·lacio.md
+  - API: api.md
+  - Base de dades: base_dades.md
+  - Desplegament: desplegament.md
+theme:
+  name: material
