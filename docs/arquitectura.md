@@ -13,3 +13,5 @@ Arquitectura MVC.
 ## Diagrama simplificat
 
 Client → Nginx → Laravel → MySQL
+
+## Prova
