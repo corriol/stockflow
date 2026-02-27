@@ -1,0 +1,18 @@
+# Instal·lació del projecte
+
+## Requisits previs
+- Docker
+- Docker Compose
+- Git
+
+## Clonar repositori
+
+git clone https://github.com/usuari/projecte-daw.git
+
+## Iniciar contenidors
+
+docker-compose up -d
+
+## Accedir a l'aplicació
+
+http://localhost:8080
